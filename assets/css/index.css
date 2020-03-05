@@ -34,6 +34,12 @@
   align-items: flex-start;
 }
 
+#hero .heroContainer {
+  display: flex;
+  justify-content: start;
+  align-items: space-between;
+}
+
 /*
     cards
 */
@@ -378,18 +384,16 @@ p {
 /**/
 #hero {
   height: 70rem;
-  background-image: url(../img/heroBg.svg), linear-gradient(to bottom, #181818, #303030);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-image: linear-gradient(to bottom, #181818, #303030);
 }
 #hero .heroContainer {
   padding: 1rem 0;
   height: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: space-between;
   flex-direction: column;
+  background-image: url(../img/heroBg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140rem;
   position: relative;
 }
 #hero .heroHeader > p {

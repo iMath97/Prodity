@@ -6,28 +6,20 @@
 // hero
 #hero{
     height: 70rem;
-    // background-image: linear-gradient(to bottom, $colorDarkBlack, $colorLightBlack), url(../img/heroBg.svg);
-    background-image: url(../img/heroBg.svg), linear-gradient(to bottom, $colorDarkBlack, $colorLightBlack);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-image: linear-gradient(to bottom, $colorDarkBlack, $colorLightBlack);
     .heroContainer{
         padding: 1rem 0;
         height: 100%;
-        display: flex;
-        justify-content: start;
-        align-items: space-between;
+
+        @extend %flexJcStartAiBetween;
         flex-direction: column;
+        
+        background-image: url(../img/heroBg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 140rem;
 
         position: relative;
-        // .heroBgImg{
-        //     position: absolute;
-        //     bottom: 0rem;
-        //     right: -5rem;
-        //     img{
-        //         height: 40rem;
-        //     }
-        // }
     }
     .heroHeader{
         >p{
