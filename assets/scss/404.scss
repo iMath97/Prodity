@@ -1,1 +1,19 @@
 @import './partials/global';
+
+#fourOhFour{
+    background-color: $colorRed;
+}
+.fourOhFourContainer{
+    @extend %flexCenter;
+    flex-flow: row wrap;
+    img{
+        height: 50rem;
+    }
+    .fourOhFourContent{
+        @extend %flexCenter;
+        flex-direction: column;
+        h1{
+            font-size: 30rem;
+        }
+    }
+}

@@ -10,7 +10,7 @@
     extends
 */
 /**/
-.voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .cards {
+.fourOhFourContainer .fourOhFourContent, .fourOhFourContainer, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,6 +346,23 @@ h3 {
 
 p {
   font-family: "Kalam";
+}
+
+#fourOhFour {
+  background-color: #c30005;
+}
+
+.fourOhFourContainer {
+  flex-flow: row wrap;
+}
+.fourOhFourContainer img {
+  height: 50rem;
+}
+.fourOhFourContainer .fourOhFourContent {
+  flex-direction: column;
+}
+.fourOhFourContainer .fourOhFourContent h1 {
+  font-size: 30rem;
 }
 
 /*# sourceMappingURL=404.css.map */
