@@ -283,6 +283,24 @@ footer {
   background-color: #18181820;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #hero .heroContent aside p {
+    display: none;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+  #hero .heroContent {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 /*
     global css
 */
@@ -330,7 +348,7 @@ body {
 }
 
 section {
-  padding: 6.5rem 0;
+  padding: 6.5rem 1rem;
 }
 
 .container {

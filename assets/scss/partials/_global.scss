@@ -5,6 +5,7 @@
 @import './components/backToTopBtn';
 @import './components/navigationBar';
 @import './components/footer';
+@import './mediaQueries';
 /*
     global css
 *//**/
@@ -53,7 +54,7 @@ body{
     position: relative;
 }
 section{
-    padding: 6.5rem 0;
+    padding: 6.5rem 1rem;
 }
 .container{
     max-width: 140rem;

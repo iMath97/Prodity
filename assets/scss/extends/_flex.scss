@@ -43,3 +43,8 @@
     justify-content: start;
     align-items: space-between;
 }
+%flexJcStartAiEnd{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}

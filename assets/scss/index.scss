@@ -33,16 +33,20 @@
     }
     .heroContent{
         height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-end;
+
+        @extend %flexJcStartAiEnd;
 
         position: relative;
         z-index: 1;
+        >aside{
+            >div{
+                margin-top: 2rem;
+            }
+        }
         .heroNavLeft{
             margin-right: 4rem;
             .heroHosting{
-                margin-top: 2rem;
+                // margin-top: 2rem;
             }
             >div{
                 max-width: 38rem;
@@ -50,7 +54,7 @@
         }
         .heroNavRight{
             .heroCompServices{
-                margin-top: 2rem;
+                // margin-top: 2rem;
             }
             >div{
                 max-width: 45rem;
