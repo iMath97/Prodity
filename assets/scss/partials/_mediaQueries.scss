@@ -1,22 +1,26 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #hero{
-        .heroHeader{
-            h1, p{
-                text-align: center;
-            }
-            h1{
-                font-size: 4rem;
+        max-height: 50rem;
+    }
+    .heroHeader{
+        h1, p{
+            text-align: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            margin-left: 0;
+        }
+    }
+    .heroContent{
+        aside{
+            a{
+                font-size: 1.7rem;
             }
             p{
-                margin-left: 0;
-            }
-        }
-        .heroContent{
-            aside{
-                p{
-                    display: none;
-                }
+                display: none;
             }
         }
     }

@@ -9,7 +9,7 @@ function navigationChangeOnScroll(){
     let infoNav = document.getElementById("infoNav");
     let btns = document.getElementsByClassName("navigationBtn");
     document.addEventListener("scroll", function(){
-        if(scrollY >= 10){
+        if(scrollY >= 55){
             nav.style = "opacity: .9; top: 0;";
             for(let i = 0; i < btns.length; i++){
                 btns[i].style = "color: #f6f5f3;";
