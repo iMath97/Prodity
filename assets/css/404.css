@@ -42,13 +42,15 @@
   flex-flow: row wrap;
 }
 .cards .card {
-  width: 18rem;
-  margin: 0 1rem;
+  width: 20rem;
+  margin: 2rem 1rem;
   text-align: center;
   align-self: start;
 }
 .cards .card > p {
   line-height: 2rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
 }
 
 .upBtn {
@@ -391,7 +393,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #404040;
 }
 

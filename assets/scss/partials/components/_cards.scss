@@ -5,12 +5,14 @@
     @extend %flexCenter;
     flex-flow: row wrap;
     .card{
-        width: 18rem;
-        margin: 0 1rem;
+        width: 20rem;
+        margin: 2rem 1rem;
         text-align: center;
         align-self: start;
         >p{
             line-height: 2rem;
+            font-size: 1.6rem;
+            margin-top: 1rem;
         }
     }
 }

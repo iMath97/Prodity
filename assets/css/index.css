@@ -54,13 +54,15 @@
   flex-flow: row wrap;
 }
 .cards .card {
-  width: 18rem;
-  margin: 0 1rem;
+  width: 20rem;
+  margin: 2rem 1rem;
   text-align: center;
   align-self: start;
 }
 .cards .card > p {
   line-height: 2rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
 }
 
 .upBtn {
@@ -403,7 +405,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #404040;
 }
 
@@ -515,6 +517,7 @@ p {
   flex-flow: row wrap;
 }
 .websitesContainer .websitesContent .websitesLeft img {
+  margin: 1rem 0;
   height: 30rem;
   filter: grayscale(50%);
 }
@@ -535,10 +538,16 @@ p {
 .hostingContainer .hostingContent .hostingLeft {
   max-width: 90rem;
 }
+.hostingContainer .hostingContent .hostingLeft p {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+  max-width: 80rem;
+}
 .hostingContainer .hostingContent .hostingRight {
   margin: 0 auto;
 }
 .hostingContainer .hostingContent .hostingRight img {
+  margin: 1rem 0;
   height: 30rem;
   filter: grayscale(50%);
 }
@@ -553,12 +562,18 @@ p {
   padding: 6rem 0;
   flex-flow: row wrap;
 }
-.backupsContainer .backupsContent .backupsLeft p {
-  max-width: 45rem;
-  text-align: justify;
+.backupsContainer .backupsContent .backupsLeft {
+  max-width: 50rem;
+  margin: 1rem 0;
 }
-.backupsContainer .backupsContent .backupsLeft svg {
-  float: left;
+.backupsContainer .backupsContent .backupsLeft p {
+  text-align: justify;
+  font-size: 1.7rem;
+}
+.backupsContainer .backupsContent .backupsLeft img {
+  height: 10rem;
+  filter: grayscale(50%);
+  float: inline-start;
 }
 
 #compServices {
@@ -577,10 +592,6 @@ p {
 .compServicesContainer .compServicesContent {
   padding: 6rem 0;
   flex-flow: row wrap;
-}
-.compServicesContainer .compServicesContent .compServicesRight img {
-  height: 30rem;
-  filter: grayscale(50%);
 }
 
 /*# sourceMappingURL=index.css.map */
