@@ -10,7 +10,7 @@
     extends
 */
 /**/
-.fourOhFourContainer .fourOhFourContent, .fourOhFourContainer, #fourOhFour > .container, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .cards {
+.fourOhFourContainer .fourOhFourContent, #fourOhFour > .container, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,12 @@
 .voorwaardenFooter .voorwaardenContainer, .contentFooter .contentContainer .openingsurenFooter .open, #siteNav .siteNavContainer, #infoNav .infoNavContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.fourOhFourContainer {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -354,10 +360,12 @@ p {
   background-color: #c30005;
 }
 .fourOhFourContainer {
+  width: 100%;
   flex-flow: row wrap;
 }
 .fourOhFourContainer img {
   height: 50rem;
+  filter: grayscale(50%);
 }
 .fourOhFourContainer .fourOhFourContent {
   flex-direction: column;

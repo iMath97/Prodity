@@ -11,10 +11,13 @@
     }
 }
 .fourOhFourContainer{
-    @extend %flexCenter;
+    width: 100%;
+
+    @extend %flexJcAround;
     flex-flow: row wrap;
     img{
         height: 50rem;
+        filter: grayscale(50%);
     }
     .fourOhFourContent{
         @extend %flexCenter;
