@@ -1,0 +1,225 @@
+@import './partials/global';
+/*
+    index css
+*//**/
+
+// hero
+#hero{
+    height: 70rem;
+    background-image: linear-gradient(to bottom, $colorDarkBlack, $colorLightBlack);
+    .heroContainer{
+        padding: 1rem 0;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: space-between;
+        flex-direction: column;
+
+        position: relative;
+        .heroBgImg{
+            position: absolute;
+            bottom: 0rem;
+            right: -5rem;
+            img{
+                height: 40rem;
+            }
+        }
+    }
+    .heroHeader{
+        >p{
+            margin-left: 1.5rem;
+        }
+    }
+    h1, p{
+        color: $colorWhiteSmoke;
+        position: relative;
+        z-index: 1;
+    }
+    .heroContent{
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        position: relative;
+        z-index: 1;
+        .heroNavLeft{
+            margin-right: 4rem;
+            .heroHosting{
+                margin-top: 2rem;
+            }
+            >div{
+                max-width: 38rem;
+            }
+        }
+        .heroNavRight{
+            .heroCompServices{
+                margin-top: 2rem;
+            }
+            >div{
+                max-width: 45rem;
+            }
+        }
+        a, p{
+            font-weight: 900;
+            font-family: $fontDella;
+        }
+        p{
+            font-weight: normal;
+            font-size: 1.8rem;
+        }
+        a{
+            font-size: 2rem;
+            i{
+                color: $colorWhiteSmoke;
+                margin-right: .3rem;
+            }
+            >span{
+                opacity: 0;
+                transition: opacity .4s linear;
+            }
+        }
+        .heroWebsites{
+            >a{
+                color: $colorLightRed;
+                &:hover{
+                    span{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .heroHosting{
+            >a{
+                color: yellowgreen;
+                &:hover{
+                    span{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .heroBackups{
+            >a{
+                color: burlywood;
+                &:hover{
+                    span{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .heroCompServices{
+            >a{
+                color: lightskyblue;
+                &:hover{
+                    span{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// websites
+.websitesContainer{
+    padding: 4rem 3rem;
+    .websitesHeader{
+        h2{
+            span{
+                color: $colorRed;
+            }
+        }
+    }
+    .websitesContent{
+        padding: 6rem 3rem;
+
+        @extend %flexJcAround;
+        flex-flow: row wrap;
+        .websitesLeft{
+            img{
+                height: 30rem;
+                filter: grayscale(50%);
+            }
+        }
+    }
+}
+
+// hosting
+#hosting{
+    background-color: $colorBrokenWhite;
+}
+.hostingContainer{
+    padding: 6rem 1rem;
+    h2{
+        span{
+            color: $colorGreen;
+        }
+    }
+    .hostingContent{
+        @extend %flexJcBetween;
+        flex-flow: row wrap;
+        .hostingLeft{
+            max-width: 90rem;
+        }
+        .hostingRight{
+            margin: 0 auto;
+            img{
+                height: 30rem;
+                filter: grayscale(50%);
+            }
+        }
+    }
+}
+
+// backups
+.backupsContainer{
+    padding: 4rem 0;
+    h2{
+        span{
+            color: $colorYellow;
+        }
+    }
+    .backupsContent{
+        padding: 6rem 0;
+
+        @extend %flexJcAround;
+        flex-flow: row wrap;
+        .backupsLeft{
+            p{
+                max-width: 45rem;
+                text-align: justify;
+            }
+            svg{
+                float: left;
+            }
+        }
+    }
+}
+
+// computer services
+#compServices{
+    background-color: $colorBrokenWhite;
+}
+.compServicesContainer{
+    padding: 4rem 0;
+    h2{
+        text-align: center;
+        span{
+            color: $colorBlue;
+        }
+    }
+    .compServicesContent{
+        padding: 6rem 0;
+
+        @extend %flexJcAround;
+        flex-flow: row wrap;
+        .compServicesRight{
+            img{
+                height: 30rem;
+                filter: grayscale(50%);
+            }
+        }
+    }
+}

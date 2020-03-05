@@ -1,0 +1,10 @@
+/*
+    Mixins
+*//**/
+@mixin grid($min, $max, $gap){
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($min, $max));
+    justify-items: center;
+    justify-content: center;
+    gap: $gap;
+}

@@ -1,0 +1,16 @@
+/*
+    cards
+*//**/
+.cards{
+    @extend %flexCenter;
+    flex-flow: row wrap;
+    .card{
+        width: 18rem;
+        margin: 0 1rem;
+        text-align: center;
+        align-self: start;
+        >p{
+            line-height: 2rem;
+        }
+    }
+}

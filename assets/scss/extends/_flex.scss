@@ -1,0 +1,40 @@
+/*
+    extends
+*//**/
+// align-items center
+%flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flexJcBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%flexJcAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+// align-items start
+%flexJcAroundAiStart{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+%flexJcStart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+%flexJcCenterAiStart{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+%flexJcBetweenAiStart{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
