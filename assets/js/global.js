@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(){
     navigationChangeOnScroll();
+    upBtnShowOnScroll();
     // slideshow();
     openingsurenUpdate();
-
 })
 function navigationChangeOnScroll(){
     let nav = document.getElementsByTagName("nav")[1];
@@ -12,18 +12,29 @@ function navigationChangeOnScroll(){
         if(scrollY >= 10){
             nav.style = "opacity: .9; top: 0;";
             for(let i = 0; i < btns.length; i++){
-                btns[i].style = "color: #f6f5f3";
+                btns[i].style = "color: #f6f5f3;";
             }
             infoNav.style = "top: -6rem";
         }else{
             nav.style = "opacity: 1;";
             for(let i = 0; i < btns.length; i++){
-                btns[i].style = "color: #f6f5f3";
+                btns[i].style = "color: #f6f5f3;";
             }
-            infoNav.style = "top: 0";
+            infoNav.style = "top: 0;";
         }
     });
 };
+
+function upBtnShowOnScroll(){
+    let upBtn = document.getElementsByClassName("upBtn");
+    document.addEventListener("scroll", function(){
+        if(scrollY >= 10){
+            upBtn.style = "opacity: 1;";
+        }else{
+            upBtn.style = "opacity: 0;";
+        }
+    });
+}
 
 function slideshow(){
     var swiper = new Swiper('.swiper-container', {

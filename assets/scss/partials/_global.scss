@@ -2,6 +2,7 @@
 @import './fonts';
 @import '../extends/flex';
 @import './components/cards';
+@import './components/backToTopBtn';
 @import './components/navigationBar';
 @import './components/footer';
 /*
@@ -48,6 +49,8 @@ body{
     padding: 0;
     padding-top: 10.5rem;
     font-size: 1.6rem;
+    
+    position: relative;
 }
 section{
     padding: 6.5rem 0;
