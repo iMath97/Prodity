@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>404 - Prodity</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'/>
-    <link rel="stylesheet" href="css/library.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/404.css">
-    <link rel="stylesheet" href="css/footer.css"> -->
 
     <!-- Charset / Viewport -->
     <meta charset="UTF-8">
@@ -40,21 +31,58 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <!-- Css End -->
 </head>
-<body>
-<header>
-    <nav>
-        <p><a href="index.html" class="active activeText">Home</a></p>
-        <p><a href="websites.html">Websites</a></p>
-        <p><a href="backups.html">Backups</a></p>
-        <p><a href="seo.html">SEO</a></p>
-        <p><a href="computers.html">Computers</a></p>
-        <p><a href="onderhoud.html">Onderhoud</a></p>
-        <p><a href="contact.html">Contact</a></p>
-    </nav>
-    <section class="logo">
-        <img src="img/proditylogo.svg" alt="Ons logo">
-    </section>
-</header>
+<body>    
+    <!-- navigation bar start -->
+    <!-- info navigaton start -->
+    <header>
+        <nav id="infoNav">
+            <div class="container">
+                <div class="infoNavContainer">
+                    <div class="openingsurenNav">
+                        <i class="far fa-clock"></i>
+                        <div class="updateOpeningsuren">
+                            <p id="maandag">maandag: gesloten</p>
+                            <p id="dinsdag">dinsdag: 9u - 16u</p>
+                            <p id="woensdag">woensdag: gesloten</p>
+                            <p id="donderdag">donderdag: 9u - 16u</p>
+                            <p id="vrijdag">vrijdag: 9u - 16u</p>
+                            <p id="zaterdag">zaterdag: gesloten</p>
+                            <p id="zondag">zondag: gesloten</p>
+                            <a href="#">Klik hier voor alle openingsuren</a>
+                        </div>
+                    </div>
+                    <div class="socialNav">
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-whatsapp-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- info navigaton end -->
+        <!-- site navigation start -->
+        <nav id="siteNav">
+            <div class="backgroundRed"></div>
+            <div class="container">
+                <div class="siteNavContainer">
+                    <div class="menu">
+                        <a href="../../index.html" class="active">home</a>
+                        <a href="./websites.html" class="active activeText">websites</a>
+                        <a href="./hosting.html">hosting</a>
+                        <a href="./backups.html">backups</a>
+                        <a href="./computerServices.html">computer services</a>
+                        <a href="./contact.html">contact</a>
+                    </div>
+                    <div class="logoNav">
+                        <a href="#">prodity</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- site navigation end -->
+    <!-- navigation bar end -->
+
 <main>
     <div class="wrapper">
         <h1>404</h1>
@@ -85,5 +113,7 @@
         </section>
     </div>
 </main>
+
+    <script src="./assets/js/global.js"></script>
 </body>
 </html>
