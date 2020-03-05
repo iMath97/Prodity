@@ -7,115 +7,109 @@
 #hero{
     height: 70rem;
     background-image: linear-gradient(to bottom, $colorDarkBlack, $colorLightBlack);
-    .heroContainer{
-        padding: 1rem 0;
-        height: 100%;
+}
+.heroContainer{
+    padding: 1rem 0;
+    height: 100%;
 
-        @extend %flexJcStartAiBetween;
-        flex-direction: column;
-        
-        background-image: url(../img/heroBg.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 140rem;
+    @extend %flexJcStartAiBetween;
+    flex-direction: column;
+    
+    background-image: url(../img/heroBg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140rem;
 
-        position: relative;
+    position: relative;
+}
+.heroHeader{
+    p{
+        margin-left: 1.5rem;
     }
-    .heroHeader{
-        >p{
-            margin-left: 1.5rem;
+}
+h1, p{
+    color: $colorWhiteSmoke;
+    position: relative;
+    z-index: 1;
+}
+.heroContent{
+    height: 100%;
+
+    @extend %flexJcStartAiEnd;
+
+    position: relative;
+    z-index: 1;
+    >aside{
+        >div{
+            margin-top: 2rem;
         }
     }
-    h1, p{
-        color: $colorWhiteSmoke;
-        position: relative;
-        z-index: 1;
+    .heroNavLeft{
+        margin-right: 4rem;
+        >div{
+            max-width: 38rem;
+        }
     }
-    .heroContent{
-        height: 100%;
-
-        @extend %flexJcStartAiEnd;
-
-        position: relative;
-        z-index: 1;
-        >aside{
-            >div{
-                margin-top: 2rem;
-            }
+    .heroNavRight{
+        >div{
+            max-width: 45rem;
         }
-        .heroNavLeft{
-            margin-right: 4rem;
-            .heroHosting{
-                // margin-top: 2rem;
-            }
-            >div{
-                max-width: 38rem;
-            }
+    }
+    a, p{
+        font-weight: 900;
+        font-family: $fontDella;
+    }
+    p{
+        font-weight: normal;
+        font-size: 1.8rem;
+    }
+    a{
+        font-size: 2rem;
+        i{
+            color: $colorWhiteSmoke;
+            margin-right: .3rem;
         }
-        .heroNavRight{
-            .heroCompServices{
-                // margin-top: 2rem;
-            }
-            >div{
-                max-width: 45rem;
-            }
+        >span{
+            opacity: 0;
+            transition: opacity .4s linear;
         }
-        a, p{
-            font-weight: 900;
-            font-family: $fontDella;
-        }
-        p{
-            font-weight: normal;
-            font-size: 1.8rem;
-        }
-        a{
-            font-size: 2rem;
-            i{
-                color: $colorWhiteSmoke;
-                margin-right: .3rem;
-            }
-            >span{
-                opacity: 0;
-                transition: opacity .4s linear;
-            }
-        }
-        .heroWebsites{
-            >a{
-                color: $colorLightRed;
-                &:hover{
-                    span{
-                        opacity: 1;
-                    }
+    }
+    .heroWebsites{
+        >a{
+            color: $colorLightRed;
+            &:hover{
+                span{
+                    opacity: 1;
                 }
             }
         }
-        .heroHosting{
-            >a{
-                color: yellowgreen;
-                &:hover{
-                    span{
-                        opacity: 1;
-                    }
+    }
+    .heroHosting{
+        >a{
+            color: yellowgreen;
+            &:hover{
+                span{
+                    opacity: 1;
                 }
             }
         }
-        .heroBackups{
-            >a{
-                color: burlywood;
-                &:hover{
-                    span{
-                        opacity: 1;
-                    }
+    }
+    .heroBackups{
+        >a{
+            color: burlywood;
+            &:hover{
+                span{
+                    opacity: 1;
                 }
             }
         }
-        .heroCompServices{
-            >a{
-                color: lightskyblue;
-                &:hover{
-                    span{
-                        opacity: 1;
-                    }
+    }
+    .heroCompServices{
+        >a{
+            color: lightskyblue;
+            &:hover{
+                span{
+                    opacity: 1;
                 }
             }
         }

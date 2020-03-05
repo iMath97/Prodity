@@ -34,13 +34,13 @@
   align-items: flex-start;
 }
 
-#hero .heroContainer {
+.heroContainer {
   display: flex;
   justify-content: start;
   align-items: space-between;
 }
 
-#hero .heroContent {
+.heroContent {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -303,6 +303,15 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  #hero .heroHeader h1, #hero .heroHeader p {
+    text-align: center;
+  }
+  #hero .heroHeader h1 {
+    font-size: 4rem;
+  }
+  #hero .heroHeader p {
+    margin-left: 0;
+  }
   #hero .heroContent aside p {
     display: none;
   }
@@ -410,7 +419,8 @@ p {
   height: 70rem;
   background-image: linear-gradient(to bottom, #181818, #303030);
 }
-#hero .heroContainer {
+
+.heroContainer {
   padding: 1rem 0;
   height: 100%;
   flex-direction: column;
@@ -420,72 +430,75 @@ p {
   background-size: 140rem;
   position: relative;
 }
-#hero .heroHeader > p {
+
+.heroHeader p {
   margin-left: 1.5rem;
 }
-#hero h1, #hero p {
+
+h1, p {
   color: #f5f5f5;
   position: relative;
   z-index: 1;
 }
-#hero .heroContent {
+
+.heroContent {
   height: 100%;
   position: relative;
   z-index: 1;
 }
-#hero .heroContent > aside > div {
+.heroContent > aside > div {
   margin-top: 2rem;
 }
-#hero .heroContent .heroNavLeft {
+.heroContent .heroNavLeft {
   margin-right: 4rem;
 }
-#hero .heroContent .heroNavLeft > div {
+.heroContent .heroNavLeft > div {
   max-width: 38rem;
 }
-#hero .heroContent .heroNavRight > div {
+.heroContent .heroNavRight > div {
   max-width: 45rem;
 }
-#hero .heroContent a, #hero .heroContent p {
+.heroContent a, .heroContent p {
   font-weight: 900;
   font-family: "Della Respira";
 }
-#hero .heroContent p {
+.heroContent p {
   font-weight: normal;
   font-size: 1.8rem;
 }
-#hero .heroContent a {
+.heroContent a {
   font-size: 2rem;
 }
-#hero .heroContent a i {
+.heroContent a i {
   color: #f5f5f5;
   margin-right: 0.3rem;
 }
-#hero .heroContent a > span {
+.heroContent a > span {
   opacity: 0;
   transition: opacity 0.4s linear;
 }
-#hero .heroContent .heroWebsites > a {
+.heroContent .heroWebsites > a {
   color: #ff0000;
 }
-#hero .heroContent .heroWebsites > a:hover span {
+.heroContent .heroWebsites > a:hover span {
   opacity: 1;
 }
-#hero .heroContent .heroHosting > a {
+.heroContent .heroHosting > a {
   color: yellowgreen;
 }
-#hero .heroContent .heroHosting > a:hover span {
+.heroContent .heroHosting > a:hover span {
   opacity: 1;
 }
-#hero .heroContent .heroBackups > a {
+.heroContent .heroBackups > a {
   color: burlywood;
 }
-#hero .heroContent .heroBackups > a:hover span {
+.heroContent .heroBackups > a:hover span {
   opacity: 1;
 }
-#hero .heroContent .heroCompServices > a {
+.heroContent .heroCompServices > a {
   color: lightskyblue;
 }
-#hero .heroContent .heroCompServices > a:hover span {
+.heroContent .heroCompServices > a:hover span {
   opacity: 1;
 }
 
