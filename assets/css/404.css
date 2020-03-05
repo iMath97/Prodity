@@ -10,7 +10,7 @@
     extends
 */
 /**/
-.fourOhFourContainer .fourOhFourContent, .fourOhFourContainer, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .cards {
+.fourOhFourContainer .fourOhFourContent, .fourOhFourContainer, #fourOhFour > .container, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,9 +228,6 @@
   line-height: 2.2rem;
 }
 
-.voorwaardenFooter {
-  background-color: #f5f5f5;
-}
 .voorwaardenFooter .voorwaardenContainer {
   padding: 1rem 0;
 }
@@ -348,10 +345,14 @@ p {
   font-family: "Kalam";
 }
 
-#fourOhFour {
-  background-color: #c30005;
+.maxHeight {
+  height: 60vh;
 }
 
+#fourOhFour {
+  height: 100%;
+  background-color: #c30005;
+}
 .fourOhFourContainer {
   flex-flow: row wrap;
 }

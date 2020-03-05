@@ -1,7 +1,14 @@
 @import './partials/global';
 
+.maxHeight{
+    height: 60vh;
+}
 #fourOhFour{
+    height: 100%;
     background-color: $colorRed;
+    >.container{
+        @extend %flexCenter;
+    }
 }
 .fourOhFourContainer{
     @extend %flexCenter;
