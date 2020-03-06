@@ -404,7 +404,7 @@ body {
 }
 
 section {
-  padding: 6.5rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .container {
@@ -434,6 +434,12 @@ h2 {
 h3 {
   font-size: 2.2rem;
   color: #404040;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-family: "Kalam";
+  margin: 0.3rem 1rem;
 }
 
 p {

@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.voorwaardenFooter .voorwaardenContainer, .contentFooter .contentContainer .openingsurenFooter .open, #siteNav .siteNavContainer, #infoNav .infoNavContainer {
+.seoContent, .voorwaardenFooter .voorwaardenContainer, .contentFooter .contentContainer .openingsurenFooter .open, #siteNav .siteNavContainer, #infoNav .infoNavContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,10 +28,22 @@
   align-items: flex-start;
 }
 
+.seoHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
 .realisatieTop {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+.seoHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 /*
@@ -386,7 +398,7 @@ body {
 }
 
 section {
-  padding: 6.5rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .container {
@@ -416,6 +428,12 @@ h2 {
 h3 {
   font-size: 2.2rem;
   color: #404040;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-family: "Kalam";
+  margin: 0.3rem 1rem;
 }
 
 p {
@@ -521,6 +539,25 @@ p {
 }
 .realisatieBottom .content p:nth-of-type(2) {
   margin: 0 0.5rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+#seo {
+  background-color: #f6f5f3;
+}
+
+.seoContainer {
+  padding: 4rem 0;
+}
+
+.seoContent {
+  padding: 6rem 0;
+}
+.seoContent img {
+  height: 40rem;
 }
 
 /*# sourceMappingURL=websites.css.map */
