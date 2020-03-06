@@ -67,7 +67,7 @@ function openingsurenUpdate(){
 
 function togglePriceBtn(){
     $('.checkBtn').click(function () { 
-        $('button.checkBtn').toggleClass('activeCheckbox');
+        $('.checkBtn').toggleClass('activeCheckbox');
     });
 }
 
