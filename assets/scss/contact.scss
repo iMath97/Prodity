@@ -1,1 +1,77 @@
 @import './partials/global';
+@import './partials/components/map';
+
+// section{
+//     padding: 2rem 0;
+//     i{
+//         font-size: 2.5rem;
+//         color: $colorRed;
+//     }
+//     >div{
+//         margin-top: 1rem;
+//         p{
+//             font-size: 1.2rem;
+//             line-height: 1.5rem;
+//         }
+//     }
+// }
+
+/*
+    contact
+*//**/
+.contactContainer{
+    @extend %flexCenter;
+    flex-direction: column;
+}
+
+.openingsurenContainer{
+    @extend %flexCenter;
+    flex-direction: column;
+    h3{
+        color: $colorRed;
+        // font-size: 3rem;
+    }
+    .open{
+        width: 16rem;
+
+        @extend %flexJcBetween;
+        flex-direction: row;
+    }
+}
+.contactInfoContainer{
+    @extend %flexJcAround;
+    flex-flow: row wrap;
+    aside{
+        width: 15rem;
+
+        @extend %flexCenter;
+        flex-direction: column;
+        >div{
+            margin-top: 1rem;
+
+            @extend %flexCenter;
+            flex-direction: column;
+            a{
+                font-size: 1.2rem;
+                color: $colorBlack;
+            }
+        }
+    }
+    .phone{
+        p:last-of-type{
+            font-size: .8rem;
+        }
+    }
+    .connect{
+        @extend %flexJcStart;
+        flex-direction: column;
+        a{
+            margin: 0 .5rem;
+            i{
+                font-size: 1rem;
+                margin-right: .5rem;
+                width: 1rem;
+            }
+        }
+    }
+}

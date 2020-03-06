@@ -10,21 +10,33 @@
     extends
 */
 /**/
-.voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .cards {
+.contactInfoContainer aside > div, .contactInfoContainer aside, .openingsurenContainer, .contactContainer, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .cards {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.voorwaardenFooter .voorwaardenContainer, .contentFooter .contentContainer .openingsurenFooter .open, #siteNav .siteNavContainer, #infoNav .infoNavContainer {
+.openingsurenContainer .open, .voorwaardenFooter .voorwaardenContainer, .contentFooter .contentContainer .openingsurenFooter .open, #siteNav .siteNavContainer, #infoNav .infoNavContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.contactInfoContainer {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
 .contentFooter .contentContainer {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
+}
+
+.contactInfoContainer .connect {
+  display: flex;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -401,6 +413,60 @@ h3 {
 
 p {
   font-family: "Kalam";
+}
+
+#mapid {
+  height: 40rem;
+  margin-bottom: -2rem;
+}
+
+/*
+    contact
+*/
+/**/
+.contactContainer {
+  flex-direction: column;
+}
+
+.openingsurenContainer {
+  flex-direction: column;
+}
+.openingsurenContainer h3 {
+  color: #c30005;
+}
+.openingsurenContainer .open {
+  width: 16rem;
+  flex-direction: row;
+}
+
+.contactInfoContainer {
+  flex-flow: row wrap;
+}
+.contactInfoContainer aside {
+  width: 15rem;
+  flex-direction: column;
+}
+.contactInfoContainer aside > div {
+  margin-top: 1rem;
+  flex-direction: column;
+}
+.contactInfoContainer aside > div a {
+  font-size: 1.2rem;
+  color: #191919;
+}
+.contactInfoContainer .phone p:last-of-type {
+  font-size: 0.8rem;
+}
+.contactInfoContainer .connect {
+  flex-direction: column;
+}
+.contactInfoContainer .connect a {
+  margin: 0 0.5rem;
+}
+.contactInfoContainer .connect a i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  width: 1rem;
 }
 
 /*# sourceMappingURL=contact.css.map */
