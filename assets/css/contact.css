@@ -423,7 +423,6 @@ p {
 
 #mapid {
   height: 40rem;
-  margin-bottom: -2rem;
   border: 0.2rem solid #191919;
 }
 
@@ -435,15 +434,31 @@ p {
   flex-direction: column;
 }
 
+#map {
+  position: relative;
+}
+
 .openingsurenContainer {
+  background-color: #181818;
+  display: inline-block;
+  padding: 2rem 3rem;
+  border-radius: 0.6rem;
+  height: 26rem;
   flex-direction: column;
+  position: absolute;
+  top: 11rem;
+  right: 3rem;
 }
 .openingsurenContainer h3 {
   color: #c30005;
+  text-align: center;
 }
 .openingsurenContainer .open {
   width: 16rem;
   flex-direction: row;
+}
+.openingsurenContainer .open p {
+  color: #f5f5f5;
 }
 
 .contactInfoContainer {
@@ -474,7 +489,6 @@ p {
 }
 .contactInfoContainer .connect a {
   font-size: 1.4rem;
-  text-align: start;
 }
 .contactInfoContainer .connect i {
   width: 2rem;
