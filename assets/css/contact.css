@@ -424,7 +424,7 @@ p {
 #mapid {
   height: 40rem;
   border: 0.2rem solid #191919;
-  background-color: burlywood;
+  background-color: #f5f5f5;
 }
 
 /*
@@ -500,8 +500,9 @@ p {
 .visitekaart {
   background-color: transparent;
   transform: rotate(-90deg);
-  height: 40rem;
-  width: 25rem;
+  height: 50rem;
+  width: 30rem;
+  perspective: 100rem;
 }
 .visitekaart .flipCardInner {
   position: relative;
@@ -514,25 +515,19 @@ p {
 .visitekaart:hover .flipCardInner {
   transform: rotateY(-180deg);
 }
-.visitekaart:hover .flipCardBack {
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
 .visitekaart .flipCardFront, .visitekaart .flipCardBack {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
-}
-.visitekaart .flipCardBack {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 .visitekaart .flipCardBack img {
   transform: rotateY(180deg);
 }
 .visitekaart img {
-  height: 40rem;
-  width: 25rem;
+  height: 50rem;
+  width: 30rem;
 }
 
 /*# sourceMappingURL=contact.css.map */
