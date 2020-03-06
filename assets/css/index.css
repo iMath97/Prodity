@@ -335,6 +335,10 @@ footer {
   .heroContent aside p {
     font-size: 1.5rem;
   }
+
+  .websitesHeader h2 {
+    text-align: center;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
@@ -347,6 +351,11 @@ footer {
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1042px) {
+  #visitekaarten .visitekaartenContainer {
+    gap: 0;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /*
     global css

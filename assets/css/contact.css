@@ -329,6 +329,10 @@ footer {
   .heroContent aside p {
     font-size: 1.5rem;
   }
+
+  .websitesHeader h2 {
+    text-align: center;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
@@ -341,6 +345,11 @@ footer {
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1042px) {
+  #visitekaarten .visitekaartenContainer {
+    gap: 0;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /*
     global css
@@ -483,7 +492,7 @@ p {
   flex-flow: row wrap;
 }
 .contactInfoContainer aside {
-  width: 25rem;
+  width: 30rem;
   margin: 2rem 0;
   flex-direction: column;
 }
@@ -495,8 +504,11 @@ p {
   margin-top: 1rem;
   flex-direction: column;
 }
-.contactInfoContainer aside > div a {
-  font-size: 1.2rem;
+.contactInfoContainer aside .connect i {
+  width: 3rem;
+}
+.contactInfoContainer aside .connect a {
+  font-size: 1.8rem;
   color: #191919;
 }
 .contactInfoContainer .phone p:last-of-type {
@@ -514,6 +526,8 @@ p {
 }
 
 #visitekaarten {
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: #f6f5f3;
 }
 

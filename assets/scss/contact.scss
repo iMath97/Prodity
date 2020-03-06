@@ -61,7 +61,7 @@
     @extend %flexJcAround;
     flex-flow: row wrap;
     aside{
-        width: 25rem;
+        width: 30rem;
         margin: 2rem 0;
 
         @extend %flexCenter;
@@ -75,8 +75,14 @@
 
             @extend %flexCenter;
             flex-direction: column;
+
+        }
+        .connect{
+            i{
+                width: 3rem;
+            }
             a{
-                font-size: 1.2rem;
+                font-size: 1.8rem;
                 color: $colorBlack;
             }
         }
@@ -101,11 +107,11 @@
 
 // visitekaarten
 #visitekaarten{
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: $colorBrokenWhite;
 }
 .visitekaartenContainer{
-    // @extend %flexJcAround;
-    // flex-flow: row wrap;
     @include grid(40rem, 50rem, 4rem);
 }
 .visitekaart{
