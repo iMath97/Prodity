@@ -19,7 +19,7 @@
     border-radius: .6rem;
     height: 36rem;
 
-    background-color: #000000;
+    background-color: $colorBlack;
     background-image: url(../img/workBehindDesktop.png);
     background-position: 15% 20%;
     background-size: 70rem;
@@ -36,7 +36,6 @@
 
         position: absolute;
         top: 3.5rem;
-        // right: 15rem;
         right: 20%;
     }
     h3{
@@ -105,9 +104,9 @@
     background-color: $colorBrokenWhite;
 }
 .visitekaartenContainer{
-    @extend %flexJcAround;
-    flex-flow: row wrap;
-    // @include grid(40rem, 40rem, 4rem);
+    // @extend %flexJcAround;
+    // flex-flow: row wrap;
+    @include grid(40rem, 50rem, 4rem);
 }
 .visitekaart{
     background-color: transparent;

@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.visitekaartenContainer, .contactInfoContainer {
+.contactInfoContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -448,7 +448,7 @@ p {
   padding: 2rem 3rem;
   border-radius: 0.6rem;
   height: 36rem;
-  background-color: #000000;
+  background-color: #191919;
   background-image: url(../img/workBehindDesktop.png);
   background-position: 15% 20%;
   background-size: 70rem;
@@ -518,7 +518,11 @@ p {
 }
 
 .visitekaartenContainer {
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 50rem));
+  justify-items: center;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .visitekaart {
