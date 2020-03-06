@@ -1,1 +1,13 @@
 @import './partials/global';
+@import './partials/components/realisatieCards';
+
+
+section{
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+#websites{
+    >p{
+        margin-left: 2rem;
+    }
+}

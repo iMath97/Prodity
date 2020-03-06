@@ -1,0 +1,112 @@
+.realisatieCards{
+    padding: 4rem 8rem;
+    // @extend %flexCenter;
+    @include grid(17rem, 17rem, 2rem);
+    .realisatieCard{
+        padding: 1rem;
+        margin: 1rem;
+        &:hover{
+            i, img{
+                opacity: 1;
+            }
+        }
+    }
+}
+.realisatieTop{
+    margin-bottom: 1rem;
+    height: 6rem;
+    width: 15rem;
+    color: $colorBlack;
+
+    @extend %flexJcCenterAiStart;
+
+    position: relative;
+    i{
+        opacity: .6;
+
+        transition: opacity 1s ease;
+        
+        position: relative;
+        z-index: 1;
+    }
+    i:nth-of-type(1){
+        font-size: 6rem;
+
+        position: relative;
+        z-index: 1;
+        img{
+            height: 3.5rem;
+            width: 5.3rem;
+    
+            position: absolute;
+            top: .7rem;
+            left: .7rem;
+            z-index: 2;
+        }
+    }
+    i:nth-of-type(2){
+        font-size: 3.4rem;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        img{
+            height: 1.9rem;
+            width: 2.8rem;
+
+            position: absolute;
+            top: .4rem;
+            left: .8rem;
+            z-index: 3;
+        }
+    }
+    i:nth-of-type(3){
+        font-size: 2.8rem;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        img{
+            height: 2rem;
+            width: 2.1rem;
+
+            position: absolute;
+            top: .1rem;
+            left: .2rem;
+            z-index: 3;
+        }
+    }
+    i:nth-of-type(4){
+        font-size: 2.2rem;
+
+        position: absolute;
+        bottom: 0;
+        right: 2.6rem;
+        z-index: 2;
+        img{
+            height: 1.9rem;
+            width: 1.1rem;
+
+            position: absolute;
+            top: .2rem;
+            left: .1rem;
+            z-index: 3;
+        }
+    }
+}
+.realisatieBottom{
+    >div{
+        margin-top: .3rem;
+
+        @extend %flexCenter;
+        flex-direction: column;
+    }
+    .content{
+        flex-direction: row;
+        p:nth-of-type(2){
+            margin: 0 .5rem;
+        }
+    }
+}

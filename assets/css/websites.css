@@ -10,7 +10,7 @@
     extends
 */
 /**/
-.voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .cards {
+.realisatieBottom > div, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +28,16 @@
   align-items: flex-start;
 }
 
+.realisatieTop {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/*
+    Mixins
+*/
+/**/
 /*
     cards
 */
@@ -401,6 +411,114 @@ h3 {
 
 p {
   font-family: "Kalam";
+}
+
+.realisatieCards {
+  padding: 4rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 17rem));
+  justify-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.realisatieCards .realisatieCard {
+  padding: 1rem;
+  margin: 1rem;
+}
+.realisatieCards .realisatieCard:hover i, .realisatieCards .realisatieCard:hover img {
+  opacity: 1;
+}
+
+.realisatieTop {
+  margin-bottom: 1rem;
+  height: 6rem;
+  width: 15rem;
+  color: #191919;
+  position: relative;
+}
+.realisatieTop i {
+  opacity: 0.6;
+  transition: opacity 1s ease;
+  position: relative;
+  z-index: 1;
+}
+.realisatieTop i:nth-of-type(1) {
+  font-size: 6rem;
+  position: relative;
+  z-index: 1;
+}
+.realisatieTop i:nth-of-type(1) img {
+  height: 3.5rem;
+  width: 5.3rem;
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  z-index: 2;
+}
+.realisatieTop i:nth-of-type(2) {
+  font-size: 3.4rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.realisatieTop i:nth-of-type(2) img {
+  height: 1.9rem;
+  width: 2.8rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.8rem;
+  z-index: 3;
+}
+.realisatieTop i:nth-of-type(3) {
+  font-size: 2.8rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.realisatieTop i:nth-of-type(3) img {
+  height: 2rem;
+  width: 2.1rem;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.2rem;
+  z-index: 3;
+}
+.realisatieTop i:nth-of-type(4) {
+  font-size: 2.2rem;
+  position: absolute;
+  bottom: 0;
+  right: 2.6rem;
+  z-index: 2;
+}
+.realisatieTop i:nth-of-type(4) img {
+  height: 1.9rem;
+  width: 1.1rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.1rem;
+  z-index: 3;
+}
+
+.realisatieBottom > div {
+  margin-top: 0.3rem;
+  flex-direction: column;
+}
+.realisatieBottom .content {
+  flex-direction: row;
+}
+.realisatieBottom .content p:nth-of-type(2) {
+  margin: 0 0.5rem;
+}
+
+section {
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+#websites > p {
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=websites.css.map */
