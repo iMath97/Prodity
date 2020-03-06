@@ -16,13 +16,20 @@ h1{
     @extend %flexJcStartAiEnd;
 }
 .seoContent{
-    padding: 6rem 0;
+    padding: 6rem 1rem;
 
     @extend %flexJcBetween;
+    flex-flow: row wrap;
     img{
-        height: 40rem;
+        width: 50rem;
+    }
+    p{
+        min-width: 40rem;
+        flex: 2;
+        text-align: justify;
     }
 }
+
 // toegankelijkheid
 .toegankelijkheidContainer{
     padding: 4rem 0;
@@ -31,8 +38,17 @@ h1{
     padding: 6rem 0;
     .toegankelijkheidRight{
         padding: 3rem 0;
+        .cards{
+            @extend %flexJcAround;
+            padding: 0 4rem;
+        }
         .card{
-            width: 30rem;
+            width: 35rem;
         }
     }
+}
+
+// prijzen
+#prijzen{
+    background-color: $colorBrokenWhite;
 }

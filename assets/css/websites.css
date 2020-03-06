@@ -10,7 +10,7 @@
     extends
 */
 /**/
-.realisatieBottom > div, .realisatieCards .realisatieCard, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .cards {
+.realisatieBottom > div, .realisatieCards .realisatieCard, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .prijzenHeader, .cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,12 @@
 .seoContent, .voorwaardenFooter .voorwaardenContainer, .contentFooter .contentContainer .openingsurenFooter .open, #siteNav .siteNavContainer, #infoNav .infoNavContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.toegankelijkheidContent .toegankelijkheidRight .cards, .prijzenCheckbox {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -67,6 +73,38 @@
   line-height: 2rem;
   font-size: 1.6rem;
   margin-top: 1rem;
+}
+
+.prijzenHeader {
+  padding: 2rem 0;
+}
+
+.prijzenCheckbox {
+  background-color: #191919;
+  padding: 0.3rem;
+  border-radius: 0.8rem;
+  width: 30rem;
+}
+.prijzenCheckbox button {
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5;
+  width: 100%;
+  margin: 0.1rem;
+  padding: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+.prijzenCheckbox button:nth-child(1) {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.prijzenCheckbox button:nth-child(2) {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.prijzenCheckbox .activeCheckbox {
+  background-color: lightskyblue;
 }
 
 .upBtn {
@@ -554,10 +592,16 @@ h1 {
 }
 
 .seoContent {
-  padding: 6rem 0;
+  padding: 6rem 1rem;
+  flex-flow: row wrap;
 }
 .seoContent img {
-  height: 40rem;
+  width: 50rem;
+}
+.seoContent p {
+  min-width: 40rem;
+  flex: 2;
+  text-align: justify;
 }
 
 .toegankelijkheidContainer {
@@ -570,8 +614,15 @@ h1 {
 .toegankelijkheidContent .toegankelijkheidRight {
   padding: 3rem 0;
 }
+.toegankelijkheidContent .toegankelijkheidRight .cards {
+  padding: 0 4rem;
+}
 .toegankelijkheidContent .toegankelijkheidRight .card {
-  width: 30rem;
+  width: 35rem;
+}
+
+#prijzen {
+  background-color: #f6f5f3;
 }
 
 /*# sourceMappingURL=websites.css.map */
