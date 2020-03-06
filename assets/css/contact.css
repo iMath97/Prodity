@@ -497,6 +497,10 @@ p {
   margin-left: 1rem;
 }
 
+#visitekaarten {
+  background-color: #f6f5f3;
+}
+
 .visitekaart {
   background-color: transparent;
   transform: rotate(-90deg);

@@ -12,6 +12,7 @@
 .mapContainer{
     position: relative;
 }
+// openingsuren
 .openingsurenContainer{
     background-color: $colorBlackLightTrans;
     display: inline-block;
@@ -40,6 +41,8 @@
         }
     }
 }
+
+// contact info
 .contactInfoContainer{
     @extend %flexJcAround;
     flex-flow: row wrap;
@@ -81,7 +84,11 @@
         }
     }
 }
+
 // visitekaarten
+#visitekaarten{
+    background-color: $colorBrokenWhite;
+}
 .visitekaartenContainer{
     @extend %flexJcAround;
 }
