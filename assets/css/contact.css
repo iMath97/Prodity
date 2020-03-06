@@ -517,18 +517,21 @@ p {
   background-color: #f6f5f3;
 }
 
+.visitekaartenContainer {
+  flex-flow: row wrap;
+}
+
 .visitekaart {
   background-color: transparent;
   transform: rotate(-90deg);
-  height: 50rem;
-  width: 30rem;
+  height: 40rem;
+  width: 25rem;
   perspective: 100rem;
 }
 .visitekaart .flipCardInner {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -547,8 +550,8 @@ p {
   transform: rotateY(180deg);
 }
 .visitekaart img {
-  height: 50rem;
-  width: 30rem;
+  height: 40rem;
+  width: 25rem;
 }
 
 /*# sourceMappingURL=contact.css.map */
