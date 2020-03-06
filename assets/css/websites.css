@@ -428,7 +428,7 @@ p {
   grid-template-columns: repeat(auto-fill, minmax(30rem, 30rem));
   justify-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .realisatieCards .realisatieCard {
   width: 30rem;
