@@ -1,8 +1,11 @@
+// websites realisatie cards
 .realisatieCards{
     padding: 4rem 8rem;
-    // @extend %flexCenter;
-    @include grid(17rem, 17rem, 2rem);
+    @include grid(30rem, 30rem, 2rem);
     .realisatieCard{
+        width: 30rem;
+        @extend %flexCenter;
+        flex-direction: column;
         padding: 1rem;
         margin: 1rem;
         &:hover{
