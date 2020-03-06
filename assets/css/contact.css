@@ -37,7 +37,13 @@
 .contactInfoContainer .connect {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-end;
+}
+
+.contactInfoContainer .connect {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 /*
@@ -418,6 +424,7 @@ p {
 #mapid {
   height: 40rem;
   margin-bottom: -2rem;
+  border: 0.2rem solid #191919;
 }
 
 /*
@@ -443,8 +450,13 @@ p {
   flex-flow: row wrap;
 }
 .contactInfoContainer aside {
-  width: 15rem;
+  width: 25rem;
+  margin: 2rem 0;
   flex-direction: column;
+}
+.contactInfoContainer aside i {
+  color: #c30005;
+  font-size: 3rem;
 }
 .contactInfoContainer aside > div {
   margin-top: 1rem;
@@ -455,18 +467,18 @@ p {
   color: #191919;
 }
 .contactInfoContainer .phone p:last-of-type {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 .contactInfoContainer .connect {
   flex-direction: column;
 }
 .contactInfoContainer .connect a {
-  margin: 0 0.5rem;
+  font-size: 1.4rem;
+  text-align: start;
 }
-.contactInfoContainer .connect a i {
-  font-size: 1rem;
-  margin-right: 0.5rem;
-  width: 1rem;
+.contactInfoContainer .connect i {
+  width: 2rem;
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=contact.css.map */

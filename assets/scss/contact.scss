@@ -42,10 +42,15 @@
     @extend %flexJcAround;
     flex-flow: row wrap;
     aside{
-        width: 15rem;
+        width: 25rem;
+        margin: 2rem 0;
 
         @extend %flexCenter;
         flex-direction: column;
+        i{
+            color: $colorRed;
+            font-size: 3rem;
+        }
         >div{
             margin-top: 1rem;
 
@@ -59,19 +64,19 @@
     }
     .phone{
         p:last-of-type{
-            font-size: .8rem;
+            font-size: 1.4rem;
         }
     }
     .connect{
-        @extend %flexJcStart;
+        @extend %flexJcStartAiEnd;
         flex-direction: column;
         a{
-            margin: 0 .5rem;
-            i{
-                font-size: 1rem;
-                margin-right: .5rem;
-                width: 1rem;
-            }
+            font-size: 1.4rem;
+            text-align: start;
+        }
+        i{
+            width: 2rem;
+            margin-left: 1rem;
         }
     }
 }

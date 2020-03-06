@@ -28,6 +28,11 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
+%flexJcStartAiEnd{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
 %flexJcCenterAiStart{
     display: flex;
     justify-content: center;
