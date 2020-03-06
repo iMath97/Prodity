@@ -291,10 +291,6 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #hero {
-    max-height: 50rem;
-  }
-
   .heroHeader h1, .heroHeader p {
     text-align: center;
   }
@@ -309,7 +305,7 @@ footer {
     font-size: 1.7rem;
   }
   .heroContent aside p {
-    display: none;
+    font-size: 1.5rem;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */

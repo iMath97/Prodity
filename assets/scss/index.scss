@@ -8,6 +8,13 @@
     height: 70rem;
     background-image: linear-gradient(to bottom, $colorDarkBlack, $colorLightBlack);
     padding: 0 1rem;
+    .heroIconBg{
+        background-image: url(../img/heroBg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 220rem;
+        height: 70rem;
+    }
 }
 .heroContainer{
     padding: 1rem 0;
@@ -15,13 +22,9 @@
 
     @extend %flexJcStartAiBetween;
     flex-direction: column;
-    
-    background-image: url(../img/heroBg.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 140rem;
 
     position: relative;
+    z-index: 2;
 }
 .heroHeader, .heroContent{
     padding: 6.5rem 1rem;

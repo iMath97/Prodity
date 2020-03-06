@@ -1,8 +1,5 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #hero{
-        max-height: 50rem;
-    }
     .heroHeader{
         h1, p{
             text-align: center;
@@ -20,7 +17,7 @@
                 font-size: 1.7rem;
             }
             p{
-                display: none;
+                font-size: 1.5rem;
             }
         }
     }

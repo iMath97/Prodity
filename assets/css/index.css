@@ -309,10 +309,6 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #hero {
-    max-height: 50rem;
-  }
-
   .heroHeader h1, .heroHeader p {
     text-align: center;
   }
@@ -327,7 +323,7 @@ footer {
     font-size: 1.7rem;
   }
   .heroContent aside p {
-    display: none;
+    font-size: 1.5rem;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -434,16 +430,20 @@ p {
   background-image: linear-gradient(to bottom, #181818, #303030);
   padding: 0 1rem;
 }
+#hero .heroIconBg {
+  background-image: url(../img/heroBg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220rem;
+  height: 70rem;
+}
 
 .heroContainer {
   padding: 1rem 0;
   height: 100%;
   flex-direction: column;
-  background-image: url(../img/heroBg.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 140rem;
   position: relative;
+  z-index: 2;
 }
 
 .heroHeader, .heroContent {
