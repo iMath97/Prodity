@@ -449,29 +449,34 @@ p {
   border-radius: 0.6rem;
   height: 36rem;
   background-color: #000000;
-  background-image: url(https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1514&q=80);
-  background-position: -30rem 20%;
-  background-size: cover;
+  background-image: url(../img/workBehindDesktop.png);
+  background-position: 15% 20%;
+  background-size: 70rem;
   background-repeat: no-repeat;
   flex-direction: column;
   position: relative;
 }
 .openingsurenContainer .openContainer {
+  background-color: #18181890;
+  padding: 1rem;
+  border-radius: 0.6rem;
   position: absolute;
   top: 5rem;
-  right: 9rem;
+  right: 18%;
 }
 .openingsurenContainer h3 {
   color: #c30005;
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 .openingsurenContainer .open {
-  width: 16rem;
+  width: 19rem;
   flex-direction: row;
 }
 .openingsurenContainer .open p {
   color: #f5f5f5;
+  font-size: 2rem;
 }
 
 .contactInfoContainer {

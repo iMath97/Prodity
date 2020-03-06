@@ -20,9 +20,9 @@
     height: 36rem;
 
     background-color: #000000;
-    background-image: url(https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1514&q=80);
-    background-position: -30rem 20%;
-    background-size: cover;
+    background-image: url(../img/workBehindDesktop.png);
+    background-position: 15% 20%;
+    background-size: 70rem;
     background-repeat: no-repeat;
 
     @extend %flexCenter;
@@ -30,22 +30,29 @@
 
     position: relative;
     .openContainer{
+        background-color: $colorBlackLightTrans;
+        padding: 1rem;
+        border-radius: .6rem;
+
         position: absolute;
         top: 5rem;
-        right: 9rem;
+        // right: 15rem;
+        right: 18%;
     }
     h3{
         color: $colorRed;
         text-align: center;
         margin-bottom: 1rem;
+        font-size: 2.5rem;
     }
     .open{
-        width: 16rem;
+        width: 19rem;
 
         @extend %flexJcBetween;
         flex-direction: row;
         p{
             color: $colorWhiteSmoke;
+            font-size: 2rem;
         }
     }
 }
