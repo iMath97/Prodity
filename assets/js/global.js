@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(){
     navigationChangeOnScroll();
     upBtnShowOnScroll();
-    // slideshow();
     openingsurenUpdate();
+    togglePriceBtn();
+    // slideshow();
 })
 function navigationChangeOnScroll(){
     let nav = document.getElementsByTagName("nav")[1];
@@ -36,23 +37,6 @@ function upBtnShowOnScroll(){
     });
 }
 
-function slideshow(){
-    var swiper = new Swiper('.swiper-container', {
-        spaceBetween: -400,
-        centeredSlides: true,
-        loop: true,
-        slidesPerView: 2,
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: false,
-        },     
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            hide: false,
-        },
-    });
-};
-
 function openingsurenUpdate(){
     $('.updateOpeningsuren > p').hide();
     let d = new Date().getDay();
@@ -80,3 +64,26 @@ function openingsurenUpdate(){
             break;
     }
 }
+
+function togglePriceBtn(){
+    $('.checkBtn').click(function () { 
+        $('button.checkBtn').toggleClass('activeCheckbox');
+    });
+}
+
+function slideshow(){
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: -400,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 2,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },     
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            hide: false,
+        },
+    });
+};
