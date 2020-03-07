@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
     openingsurenUpdate();
     togglePriceBtn();
     mobileNavigation();
+    desktopOrMobile();
     // showroomRealisaties();
     // slideshow();
 })
@@ -89,6 +90,42 @@ function mobileNavigation(){
     });
     $('#mobileBtnClose').click(function () {
         $('#mobileBg').hide();
+    });
+}
+
+function desktopOrMobile(){
+    let screenWidth = window.matchMedia("(max-width: 700px)");
+    if (screenWidth.matches){
+        $('#siteNav').hide();
+        $('#mobileSiteNav').show();
+    }else{
+        $('#mobileSiteNav').hide();
+        $('#siteNav').show();
+    }
+}
+
+/* mobile nav */
+function mobileNav(){
+    let windowWidth = 700;
+    $("#siteNav").hide();
+    if($(window).outerWidth() > windowWidth){
+        $("#btns").fadeIn();
+    }
+    $(".burger").click(function (e) { 
+        e.preventDefault();
+        this.classList.toggle("change");
+        if($(".btn2").css("display") == "none"){
+            $("#btns").fadeIn();
+        }else{
+            $("#btns").fadeOut();
+        }
+    });
+    $(window).resize(function () {
+        if($(window).outerWidth() > windowWidth){
+            $("#btns").fadeIn();
+        }else{
+            $("#btns").fadeOut(1);
+        }
     });
 }
 
