@@ -324,14 +324,14 @@ footer {
 }
 
 .infoFooter {
-  background-color: #191919;
+  background-color: #79c6f7;
 }
 .infoFooter .infoContainer {
   padding: 3rem 0;
   flex-direction: column;
 }
 .infoFooter .infoContainer > a {
-  color: #c30005;
+  color: #191919;
   font-size: 3.6rem;
   font-weight: bolder;
   line-height: 5.4rem;
