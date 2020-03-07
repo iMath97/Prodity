@@ -4,6 +4,7 @@
 
     @extend %flexCenter;
 }
+// prijzen checkbox
 .prijzenCheckbox{
     background-color: $colorBlack;
     padding: .3rem;
@@ -40,4 +41,49 @@
     .activeCheckbox{
         background-color: $colorBlue;
     }
+}
+
+// prijzen cards
+.prijzenCards{
+    padding: 3rem 0;
+
+    @extend %flexCenter;
+}
+.prijzenCard{
+    width: 28rem;
+    margin: 1rem;
+    border-radius: .6rem;
+
+    @extend %flexCenter;
+    flex-direction: column;
+    &:nth-child(1){
+        background-color: $colorWhite;
+    }
+    &:nth-child(2){
+        background-color: $colorGreen;
+    }
+    &:nth-child(3){
+        background-color: $colorBlue;
+    }
+    &:nth-child(4){
+        background-color: $colorRed;
+    }
+    &:nth-child(5){
+        background-color: $colorBlack;
+    }
+}
+.cardHeader, .cardContent, .cardFooter{
+    padding: 3rem;
+    text-align: center;
+}
+.cardHeader{
+    border-bottom: .1rem solid $colorBlackTrans;
+}
+.cardContent{
+    width: 100%;
+    background-color: $colorBrokenWhite;
+}
+.cardFooter{
+    width: 24rem;
+    text-align: left;
 }

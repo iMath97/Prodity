@@ -10,7 +10,7 @@
     extends
 */
 /**/
-.voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .prijzenCheckbox button, .prijzenHeader, .cards {
+.voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .prijzenCard, .prijzenCards, .prijzenCheckbox button, .prijzenHeader, .cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,6 +93,51 @@
 }
 .prijzenCheckbox .activeCheckbox {
   background-color: lightskyblue;
+}
+
+.prijzenCards {
+  padding: 3rem 0;
+}
+
+.prijzenCard {
+  width: 28rem;
+  margin: 1rem;
+  border-radius: 0.6rem;
+  flex-direction: column;
+}
+.prijzenCard:nth-child(1) {
+  background-color: #ffffff;
+}
+.prijzenCard:nth-child(2) {
+  background-color: yellowgreen;
+}
+.prijzenCard:nth-child(3) {
+  background-color: lightskyblue;
+}
+.prijzenCard:nth-child(4) {
+  background-color: #c30005;
+}
+.prijzenCard:nth-child(5) {
+  background-color: #191919;
+}
+
+.cardHeader, .cardContent, .cardFooter {
+  padding: 3rem;
+  text-align: center;
+}
+
+.cardHeader {
+  border-bottom: 0.1rem solid #18181820;
+}
+
+.cardContent {
+  width: 100%;
+  background-color: #f6f5f3;
+}
+
+.cardFooter {
+  width: 24rem;
+  text-align: left;
 }
 
 .upBtn {
