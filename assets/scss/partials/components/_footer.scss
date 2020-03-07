@@ -3,13 +3,14 @@ footer{
     z-index: 3;
 }
 .infoFooter{
-    background-image: linear-gradient(to bottom, $colorLightBlack, $colorDarkBlack);
+    // background-image: linear-gradient(to bottom, $colorLightRed, $colorDarkRed);
+    background-color: $colorBlue;
     .infoContainer{
         padding: 3rem 0;
         @extend %flexCenter;
         flex-direction: column;
             >a{
-                color: $colorRed;
+                color: $colorBlack;
                 font-size: 3.6rem;
                 font-weight: bolder;
                 line-height: 5.4rem;
@@ -23,14 +24,15 @@ footer{
     }
 }
 .contentFooter{
-    background-color: $colorDarkBlack;
+    background-color: $colorDarkBlue;
     .contentContainer{
         padding: 3rem 0;
+        width: 100rem;
         @extend %flexJcAroundAiStart;
         flex-flow: row wrap;
         >div{
             >p{
-                color: $colorRed;
+                color: $colorBlack;
                 text-transform: uppercase;
                 font-size: 1.6rem;
             }
@@ -73,26 +75,6 @@ footer{
                     &:hover{
                         color: $colorRed;
                     }
-                }
-            }
-        }
-        .openingsurenFooter{
-            .borderOpeningsuren{
-                border: .1rem solid $colorWhiteSmoke;
-                padding: 1rem 2rem;
-                >p{
-                    text-align: center;
-                    color: $colorRed;
-                    text-transform: uppercase;
-                }
-            }
-            .open{
-                @extend %flexJcBetween;
-                color: $colorWhiteSmoke;
-                font-size: 1.8rem;
-                >div{
-                    margin: 0 .5rem;
-                    line-height: 2.2rem;
                 }
             }
         }
