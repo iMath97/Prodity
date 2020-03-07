@@ -318,14 +318,14 @@ footer {
 }
 
 .infoFooter {
-  background-color: lightskyblue;
+  background-color: #191919;
 }
 .infoFooter .infoContainer {
   padding: 3rem 0;
   flex-direction: column;
 }
 .infoFooter .infoContainer > a {
-  color: #191919;
+  color: #c30005;
   font-size: 3.6rem;
   font-weight: bolder;
   line-height: 5.4rem;
@@ -338,7 +338,7 @@ footer {
 }
 
 .contentFooter {
-  background-color: #79c6f7;
+  background-color: #181818;
 }
 .contentFooter .contentContainer {
   padding: 3rem 0;
@@ -346,7 +346,7 @@ footer {
   flex-flow: row wrap;
 }
 .contentFooter .contentContainer > div > p {
-  color: #191919;
+  color: #c30005;
   text-transform: uppercase;
   font-size: 1.6rem;
 }
