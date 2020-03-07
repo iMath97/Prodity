@@ -10,13 +10,13 @@
     extends
 */
 /**/
-.voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .prijzenCard, .prijzenCheckbox button, .prijzenHeader, .cards {
+.voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoContainer, .infoNavContainer .openingsurenNav, .prijzenCard, .prijzenCheckbox button, .prijzenHeader, .cards {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.voorwaardenFooter .voorwaardenContainer, #siteNav .siteNavContainer, #infoNav .infoNavContainer {
+.voorwaardenFooter .voorwaardenContainer, #siteNav .siteNavContainer, .infoNavContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -199,6 +199,7 @@
 
 #infoNav {
   width: 100%;
+  height: 6rem;
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: #f5f5f5;
@@ -207,22 +208,24 @@
   top: 0;
   z-index: 4;
 }
-#infoNav .infoNavContainer {
+
+.infoNavContainer {
   height: 6rem;
 }
-#infoNav .infoNavContainer .openingsurenNav {
+.infoNavContainer .openingsurenNav {
   flex-direction: row;
 }
-#infoNav .infoNavContainer .openingsurenNav > i {
+.infoNavContainer .openingsurenNav > i {
   font-size: 2.4rem;
   margin-right: 0.7rem;
 }
-#infoNav .infoNavContainer .socialNav i {
+
+.socialNav i {
   font-size: 3.5rem;
   color: #181818;
   margin-left: 0.7rem;
 }
-#infoNav .infoNavContainer .socialNav i:hover {
+.socialNav i:hover {
   color: #880000;
 }
 
@@ -426,6 +429,11 @@ footer {
     font-size: 4rem;
   }
 
+  .socialNav i {
+    font-size: 2.3rem;
+    margin-left: 0.2rem;
+  }
+
   .heroHeader h1, .heroHeader p {
     text-align: center;
   }
@@ -447,15 +455,19 @@ footer {
   .contactContainer p {
     text-align: center;
   }
+
+  .infoContainer > a {
+    font-size: 2.3rem;
+  }
+
+  .hostingContainer .hostingContent .hostingRight img {
+    width: 25rem;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
   .updateOpeningsuren p {
     font-size: 2rem;
-  }
-
-  .infoContainer > a {
-    font-size: 2.6rem;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */

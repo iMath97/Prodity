@@ -94,7 +94,7 @@ function mobileNavigation(){
 }
 
 function desktopOrMobile(){
-    let screenWidth = window.matchMedia("(max-width: 800px)");
+    let screenWidth = window.matchMedia("(max-width: 850px)");
     if (screenWidth.matches){
         $('.menu').hide();
         $('.backgroundRed').hide();

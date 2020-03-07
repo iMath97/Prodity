@@ -162,26 +162,26 @@
             color: $colorGreen;
         }
     }
-    .hostingContent{
-        padding: 6rem 0;
+}
+.hostingContent{
+    padding: 6rem 0;
 
-        @extend %flexJcBetween;
-        flex-flow: row wrap;
-        .hostingLeft{
-            max-width: 90rem;
-            p{
-                font-size: 1.7rem;
-                margin: 1rem 0;
-                max-width: 80rem;
-            }
+    @extend %flexJcBetween;
+    flex-flow: row wrap;
+    .hostingLeft{
+        max-width: 90rem;
+        p{
+            font-size: 1.7rem;
+            margin: 1rem 0;
+            max-width: 80rem;
         }
-        .hostingRight{
-            margin: 0 auto;
-            img{
-                margin: 1rem 0;
-                height: 30rem;
-                filter: grayscale(50%);
-            }
+    }
+    .hostingRight{
+        margin: 0 auto;
+        img{
+            margin: 1rem 0;
+            width: 40rem;
+            filter: grayscale(50%);
         }
     }
 }
