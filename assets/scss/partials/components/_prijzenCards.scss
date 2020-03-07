@@ -67,16 +67,17 @@
         }
         .cardFooter{
             width: 100%;
-            padding-left: 4rem;
-            padding-bottom: 6rem;
+            padding-left: 5.5rem;
+            padding-bottom: 7rem;
             a{
                 background-color: $colorYellow;
                 color: $colorBlack;
                 width: 100%;
                 text-align: center;
-                padding: 1rem;
+                padding: 1.5rem 1rem;
                 border-bottom-left-radius: .6rem;
                 border-bottom-right-radius: .6rem;
+                text-transform: capitalize;
 
                 position: absolute;
                 bottom: 0;
@@ -99,7 +100,7 @@
     }
     &:nth-child(4){
         .cardContent{
-            background-color: $colorRed;
+            background-color: $colorLightRed;
         }
     }
     &:nth-child(5){
@@ -123,7 +124,7 @@
     filter: grayscale(30%);
 }
 .cardFooter{
-    width: 24rem;
+    width: 21rem;
     text-align: left;
 
     position: relative;

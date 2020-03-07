@@ -138,17 +138,18 @@
 }
 .prijzenCard:nth-child(1) .cardFooter {
   width: 100%;
-  padding-left: 4rem;
-  padding-bottom: 6rem;
+  padding-left: 5.5rem;
+  padding-bottom: 7rem;
 }
 .prijzenCard:nth-child(1) .cardFooter a {
   background-color: burlywood;
   color: #191919;
   width: 100%;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   border-bottom-left-radius: 0.6rem;
   border-bottom-right-radius: 0.6rem;
+  text-transform: capitalize;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -163,7 +164,7 @@
   background-color: lightskyblue;
 }
 .prijzenCard:nth-child(4) .cardContent {
-  background-color: #c30005;
+  background-color: #ff0000;
 }
 .prijzenCard:nth-child(5) .cardContent {
   background-color: #f6f5f3;
@@ -186,7 +187,7 @@
 }
 
 .cardFooter {
-  width: 24rem;
+  width: 21rem;
   text-align: left;
   position: relative;
 }
