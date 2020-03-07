@@ -65,6 +65,27 @@
         .cardContent{
             background-color: $colorYellow;
         }
+        .cardFooter{
+            width: 100%;
+            padding-left: 4rem;
+            padding-bottom: 6rem;
+            a{
+                background-color: $colorYellow;
+                color: $colorBlack;
+                width: 100%;
+                text-align: center;
+                padding: 1rem;
+                border-bottom-left-radius: .6rem;
+                border-bottom-right-radius: .6rem;
+
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                &:hover{
+                    background-color: $colorWhite;
+                }
+            }
+        }
     }
     &:nth-child(2){
         .cardContent{

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
     upBtnShowOnScroll();
     openingsurenUpdate();
     togglePriceBtn();
+    // showroomRealisaties();
     // slideshow();
 })
 function navigationChangeOnScroll(){
@@ -77,6 +78,12 @@ function togglePriceBtn(){
             $('.jaarlijks').hide();
             $('.maandelijks').show();
         }
+    });
+}
+
+function showroomRealisaties(){
+    $('.realisatieTop').click(function () { 
+        $('.realisatieShowroom').append('.realisatieCard');
     });
 }
 
