@@ -10,7 +10,7 @@
     extends
 */
 /**/
-.fourOhFourContainer .fourOhFourContent, #fourOhFour > .container, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .prijzenCard, .prijzenCards, .prijzenCheckbox button, .prijzenHeader, .cards {
+.fourOhFourContainer .fourOhFourContent, #fourOhFour > .container, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoFooter .infoContainer, #infoNav .infoNavContainer .openingsurenNav, .prijzenCard, .prijzenCheckbox button, .prijzenHeader, .cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,12 @@
 .contentFooter .contentContainer {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
+}
+
+.prijzenCards {
+  display: flex;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -121,6 +127,9 @@
   background-color: #c30005;
   box-shadow: 0.1rem 0.1rem 1rem #c0c0c0;
 }
+.prijzenCard:nth-child(4) .cardFooter i {
+  color: #f5f5f5;
+}
 .prijzenCard:nth-child(5) {
   background-color: #191919;
   box-shadow: 0.1rem 0.1rem 1rem #c0c0c0;
@@ -143,6 +152,13 @@
 .cardFooter {
   width: 24rem;
   text-align: left;
+}
+.cardFooter p {
+  text-transform: capitalize;
+}
+.cardFooter i {
+  color: #c30005;
+  margin-right: 0.5rem;
 }
 
 .upBtn {

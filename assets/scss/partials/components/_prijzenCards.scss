@@ -47,7 +47,7 @@
 .prijzenCards{
     padding: 3rem 0;
 
-    @extend %flexCenter;
+    @extend %flexJcStartAiStart;
 }
 .prijzenCard{
     width: 28rem;
@@ -71,6 +71,11 @@
     &:nth-child(4){
         background-color: $colorRed;
         box-shadow: .1rem .1rem 1rem $colorSilver;
+        .cardFooter{
+            i{
+                color: $colorWhiteSmoke;
+            }
+        }
     }
     &:nth-child(5){
         background-color: $colorBlack;
@@ -92,4 +97,11 @@
 .cardFooter{
     width: 24rem;
     text-align: left;
+    p{
+        text-transform: capitalize;
+    }
+    i{
+        color: $colorRed;
+        margin-right: .5rem;
+    }
 }
