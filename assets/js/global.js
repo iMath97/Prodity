@@ -75,6 +75,7 @@ function desktopOrMobile(){
         $('.mobileBtn').hide();
         $('.backgroundRed').show();
         $('.menu').show();
+        $('.mobileMenu').hide();
     }
 }
 
