@@ -21,23 +21,6 @@
                 font-size: 2.4rem;
                 margin-right: .7rem;
             }
-            .updateOpeningsuren{
-                height: 3rem;
-                p{
-                    font-size: 2.6rem;
-                    line-height: 2rem;
-                    text-transform: capitalize;
-                }
-                a{
-                    font-size: 1.3rem;
-                    margin-top: .3rem;
-                    text-decoration: underline;
-                    color: $colorGrey;
-                    &:hover{
-                        color: $colorDarkBlack;
-                    }
-                }
-            }
         }
         .socialNav{
             i{
@@ -48,6 +31,22 @@
                     color: $colorDarkRed;
                 }
             }
+        }
+    }
+}
+.updateOpeningsuren{
+    p{
+        font-size: 2.6rem;
+        line-height: 2rem;
+        text-transform: capitalize;
+    }
+    a{
+        font-size: 1.3rem;
+        margin-top: .3rem;
+        text-decoration: underline;
+        color: $colorGrey;
+        &:hover{
+            color: $colorDarkBlack;
         }
     }
 }
@@ -122,43 +121,23 @@
 }
 
 // mobile navigation
-#mobileSiteNav{
-    background-color: $colorBlack;
-    width: 100%;
+.mobileBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 
-    position: fixed;
-    top: 6rem;
-    z-index: 4;
-}
-.mobileContainer{
-    padding: 1rem 2rem;
-
-    @extend %flexJcBetween;
-}
-.burgerNav{
+    position: relative;
+    z-index: 5;
     i{
         font-size: 4rem;
-    }
-}
-#mobileBg{
-    height: 100vh;
-    width: 100vw;
-    background-color: $colorBlack;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 8;
-    button{
-        background-color: transparent;
         color: $colorWhiteSmoke;
-        border: none;
-        cursor: pointer;
-    }
-    #mobileBtnClose{
-
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
     }
 }
+// #mobileSiteNav{
+//     background-color: $colorBlack;
+//     width: 100%;
+
+//     position: fixed;
+//     top: 6rem;
+//     z-index: 6;
+// }

@@ -40,7 +40,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+    .updateOpeningsuren{
+        p{
+            font-size: 2rem;
+        }
+    }
+    .infoContainer{
+            >a{
+                font-size: 2.6rem;
+            }
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {

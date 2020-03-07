@@ -5,29 +5,29 @@ footer{
 .infoFooter{
     // background-image: linear-gradient(to bottom, $colorLightRed, $colorDarkRed);
     background-color: $colorDarkBlue;
-    .infoContainer{
-        padding: 3rem 0;
-        @extend %flexCenter;
-        flex-direction: column;
-            >a{
-                color: $colorBlack;
-                font-size: 3.6rem;
-                font-weight: bolder;
-                line-height: 5.4rem;
-                letter-spacing: .2rem;
-            }
-            p{
-                color: $colorWhiteSmoke;
-                font-size: 2rem;
-                line-height: 2.4rem;
-            }
-    }
+}
+.infoContainer{
+    padding: 3rem 0;
+    @extend %flexCenter;
+    flex-direction: column;
+        >a{
+            color: $colorBlack;
+            font-size: 3.6rem;
+            font-weight: bolder;
+            line-height: 5.4rem;
+            letter-spacing: .2rem;
+        }
+        p{
+            color: $colorWhiteSmoke;
+            font-size: 2rem;
+            line-height: 2.4rem;
+        }
 }
 .contentFooter{
     background-color: $colorDarkBlack;
     .contentContainer{
         padding: 3rem 0;
-        width: 100rem;
+        max-width: 100rem;
         @extend %flexJcAroundAiStart;
         flex-flow: row wrap;
         >div{

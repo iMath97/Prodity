@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(){
-    navigationChangeOnScroll();
+    // navigationChangeOnScroll();
     upBtnShowOnScroll();
     openingsurenUpdate();
     togglePriceBtn();
-    mobileNavigation();
+    // mobileNavigation();
     desktopOrMobile();
     // showroomRealisaties();
     // slideshow();
@@ -94,13 +94,16 @@ function mobileNavigation(){
 }
 
 function desktopOrMobile(){
-    let screenWidth = window.matchMedia("(max-width: 700px)");
+    let screenWidth = window.matchMedia("(max-width: 800px)");
     if (screenWidth.matches){
-        $('#siteNav').hide();
-        $('#mobileSiteNav').show();
+        $('.menu').hide();
+        $('.backgroundRed').hide();
+        $('.mobileBtn').show();
     }else{
-        $('#mobileSiteNav').hide();
-        $('#siteNav').show();
+        $('.mobileBtn').hide();
+        $('.backgroundRed').show();
+        $('.menu').show();
+        navigationChangeOnScroll();
     }
 }
 
