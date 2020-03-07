@@ -34,16 +34,16 @@
   align-items: flex-start;
 }
 
-.prijzenCards {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 .contactInfoContainer .connect {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+}
+
+.prijzenCards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .contactInfoContainer .connect {
@@ -115,10 +115,11 @@
 
 .prijzenCards {
   padding: 3rem 0;
+  flex-flow: row wrap;
 }
 
 .prijzenCard {
-  width: 28rem;
+  width: 26rem;
   margin: 1rem;
   border-radius: 0.6rem;
   background-color: #191919;
@@ -133,7 +134,7 @@
 .prijzenCard:nth-child(1) .cardFooter {
   width: 100%;
   padding-left: 5.5rem;
-  padding-bottom: 7rem;
+  padding-bottom: 8rem;
 }
 .prijzenCard:nth-child(1) .cardFooter a {
   background-color: burlywood;

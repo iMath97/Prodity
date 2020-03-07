@@ -47,10 +47,11 @@
 .prijzenCards{
     padding: 3rem 0;
 
-    @extend %flexJcStartAiStart;
+    @extend %flexJcCenterAiStart;
+    flex-flow: row wrap;
 }
 .prijzenCard{
-    width: 28rem;
+    width: 26rem;
     margin: 1rem;
     border-radius: .6rem;
     background-color: $colorBlack;
@@ -68,7 +69,7 @@
         .cardFooter{
             width: 100%;
             padding-left: 5.5rem;
-            padding-bottom: 7rem;
+            padding-bottom: 8rem;
             a{
                 background-color: $colorYellow;
                 color: $colorBlack;
