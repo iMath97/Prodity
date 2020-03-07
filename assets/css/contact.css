@@ -162,6 +162,7 @@
 .cardFooter {
   width: 24rem;
   text-align: left;
+  position: relative;
 }
 .cardFooter p {
   text-transform: capitalize;
