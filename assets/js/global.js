@@ -78,6 +78,19 @@ function desktopOrMobile(){
     }
 }
 
+// mobile navigation
+function mobileNav(){
+    $('.mobileMenu').hide();
+    $('.mobileBtn').click(function () {
+        $('.mobileBtn').hide();
+        $('.mobileMenu').show();
+    });
+    $('.activeMobileBtn').click(function () {
+        $('.mobileBtn').show();
+        $('.mobileMenu').hide();
+    });
+}
+
 // navigation fixed on scroll
 function navigationChangeOnScroll(){
     let nav = document.getElementById("siteNav");
@@ -100,42 +113,27 @@ function navigationChangeOnScroll(){
     });
 };
 
-// mobile navigation
-function mobileNav(){
-    $('.mobileMenu').hide();
-    $('.mobileBtn').click(function () {
-        $('.mobileBtn').hide();
-        // $('#infoNav').hide();
-        $('.mobileMenu').show();
-    });
-    $('.activeMobileBtn').click(function () {
-        $('.mobileBtn').show();
-        // $('#infoNav').show();
-        $('.mobileMenu').hide();
-    });
-
-    // let windowWidth = 700;
-    // $("#siteNav").hide();
-    // if($(window).outerWidth() > windowWidth){
-    //     $("#btns").fadeIn();
-    // }
-    // $(".burger").click(function (e) { 
-    //     e.preventDefault();
-    //     this.classList.toggle("change");
-    //     if($(".btn2").css("display") == "none"){
-    //         $("#btns").fadeIn();
-    //     }else{
-    //         $("#btns").fadeOut();
-    //     }
-    // });
-    // $(window).resize(function () {
-    //     if($(window).outerWidth() > windowWidth){
-    //         $("#btns").fadeIn();
-    //     }else{
-    //         $("#btns").fadeOut(1);
-    //     }
-    // });
-}
+// let windowWidth = 700;
+// $("#siteNav").hide();
+// if($(window).outerWidth() > windowWidth){
+//     $("#btns").fadeIn();
+// }
+// $(".burger").click(function (e) { 
+//     e.preventDefault();
+//     this.classList.toggle("change");
+//     if($(".btn2").css("display") == "none"){
+//         $("#btns").fadeIn();
+//     }else{
+//         $("#btns").fadeOut();
+//     }
+// });
+// $(window).resize(function () {
+//     if($(window).outerWidth() > windowWidth){
+//         $("#btns").fadeIn();
+//     }else{
+//         $("#btns").fadeOut(1);
+//     }
+// });
 
 function showroomRealisaties(){
     $('.realisatieTop').click(function () {

@@ -327,8 +327,8 @@
 }
 .mobileMenu .activeMobileBtn {
   position: absolute;
-  top: 2rem;
-  left: 2rem;
+  top: 6.5rem;
+  left: 1.5rem;
 }
 .mobileMenu > a {
   margin: 2rem;
