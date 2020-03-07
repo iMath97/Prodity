@@ -1,14 +1,28 @@
+@media only screen and (max-width: 380px) {
+    .infoNavContainer{
+        .socialNav{
+            i{
+                font-size: 2.8rem;
+                margin-left: .2rem;
+            }
+        }
+    }
+    .openingsurenNav{
+        .updateOpeningsuren{
+            p{
+                font-size: 1.5rem;
+            }
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container{
         h1{
             font-size: 4rem;
-        }
-    }
-    .socialNav{
-        i{
-            font-size: 2.3rem;
-            margin-left: .2rem;
         }
     }
     .heroHeader{
