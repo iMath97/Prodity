@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
     upBtnShowOnScroll();
     openingsurenUpdate();
     togglePriceBtn();
+    mobileNavigation();
     // showroomRealisaties();
     // slideshow();
 })
@@ -68,7 +69,7 @@ function openingsurenUpdate(){
 
 function togglePriceBtn(){
     $('.maandelijks').hide();
-    $('.checkBtn').click(function () { 
+    $('.checkBtn').click(function () {
         $('.checkBtn').toggleClass('activeCheckbox');
         let jaarlijks = $('.btnJaarlijks');
         if(jaarlijks.hasClass('activeCheckbox')){
@@ -81,8 +82,18 @@ function togglePriceBtn(){
     });
 }
 
+function mobileNavigation(){
+    $('#mobileBg').hide();
+    $('#mobileBtn').click(function () {
+        $('#mobileBg').show();
+    });
+    $('#mobileBtnClose').click(function () {
+        $('#mobileBg').hide();
+    });
+}
+
 function showroomRealisaties(){
-    $('.realisatieTop').click(function () { 
+    $('.realisatieTop').click(function () {
         $('.realisatieShowroom').append('.realisatieCard');
     });
 }

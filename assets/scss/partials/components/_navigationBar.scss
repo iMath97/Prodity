@@ -138,3 +138,20 @@
         font-size: 4rem;
     }
 }
+#mobileBg{
+    height: 100%;
+    width: 100%;
+    background-color: $colorBlack;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    #mobileBtnClose{
+        color: $colorWhiteSmoke;
+
+        position: absolute;
+        top: 10rem;
+        right: 10rem;
+    }
+}
