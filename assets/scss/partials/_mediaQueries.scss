@@ -1,11 +1,13 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .container{
+        h1{
+            font-size: 4rem;
+        }
+    }
     .heroHeader{
         h1, p{
             text-align: center;
-        }
-        h1{
-            font-size: 4rem;
         }
         p{
             margin-left: 0;
@@ -14,15 +16,20 @@
     .heroContent{
         aside{
             a{
-                font-size: 1.7rem;
+                font-size: 1.6rem;
             }
             p{
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
     }
     .websitesHeader{
         h2{
+            text-align: center;
+        }
+    }
+    .contactContainer{
+        p{
             text-align: center;
         }
     }

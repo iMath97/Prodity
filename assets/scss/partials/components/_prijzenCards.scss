@@ -53,37 +53,44 @@
     width: 28rem;
     margin: 1rem;
     border-radius: .6rem;
+    background-color: $colorBlack;
+    color: $colorWhiteSmoke;
+    box-shadow: .1rem .1rem 1rem $colorSilver;
+
+    transition: transform .5s ease;
 
     @extend %flexCenter;
     flex-direction: column;
     &:nth-child(1){
-        background-color: $colorWhite;
-        box-shadow: .1rem .1rem 1rem $colorSilver;
+        .cardContent{
+            background-color: $colorYellow;
+        }
     }
     &:nth-child(2){
-        background-color: $colorGreen;
-        box-shadow: .1rem .1rem 1rem $colorSilver;
+        .cardContent{
+            background-color: $colorGreen;
+        }
     }
     &:nth-child(3){
-        background-color: $colorBlue;
-        box-shadow: .1rem .1rem 1rem $colorSilver;
+        .cardContent{
+            background-color: $colorBlue;
+        }
     }
     &:nth-child(4){
-        background-color: $colorRed;
-        box-shadow: .1rem .1rem 1rem $colorSilver;
-        .cardFooter{
-            i{
-                color: $colorWhiteSmoke;
-            }
+        .cardContent{
+            background-color: $colorRed;
         }
     }
     &:nth-child(5){
-        background-color: $colorBlack;
-        box-shadow: .1rem .1rem 1rem $colorSilver;
-        color: $colorWhiteSmoke;
         .cardContent{
-            color: $colorBlack;
+            background-color: $colorBrokenWhite;
         }
+    }
+    .cardContent{
+        color: $colorBlack;
+    }
+    &:hover{
+        transform: scale(1.1);
     }
 }
 .cardHeader, .cardContent, .cardFooter{
@@ -92,7 +99,7 @@
 }
 .cardContent{
     width: 100%;
-    background-color: $colorBrokenWhite;
+    filter: grayscale(30%);
 }
 .cardFooter{
     width: 24rem;

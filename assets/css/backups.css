@@ -109,34 +109,32 @@
   width: 28rem;
   margin: 1rem;
   border-radius: 0.6rem;
+  background-color: #191919;
+  color: #f5f5f5;
+  box-shadow: 0.1rem 0.1rem 1rem #c0c0c0;
+  transition: transform 0.5s ease;
   flex-direction: column;
 }
-.prijzenCard:nth-child(1) {
-  background-color: #ffffff;
-  box-shadow: 0.1rem 0.1rem 1rem #c0c0c0;
+.prijzenCard:nth-child(1) .cardContent {
+  background-color: burlywood;
 }
-.prijzenCard:nth-child(2) {
+.prijzenCard:nth-child(2) .cardContent {
   background-color: yellowgreen;
-  box-shadow: 0.1rem 0.1rem 1rem #c0c0c0;
 }
-.prijzenCard:nth-child(3) {
+.prijzenCard:nth-child(3) .cardContent {
   background-color: lightskyblue;
-  box-shadow: 0.1rem 0.1rem 1rem #c0c0c0;
 }
-.prijzenCard:nth-child(4) {
+.prijzenCard:nth-child(4) .cardContent {
   background-color: #c30005;
-  box-shadow: 0.1rem 0.1rem 1rem #c0c0c0;
-}
-.prijzenCard:nth-child(4) .cardFooter i {
-  color: #f5f5f5;
-}
-.prijzenCard:nth-child(5) {
-  background-color: #191919;
-  box-shadow: 0.1rem 0.1rem 1rem #c0c0c0;
-  color: #f5f5f5;
 }
 .prijzenCard:nth-child(5) .cardContent {
+  background-color: #f6f5f3;
+}
+.prijzenCard .cardContent {
   color: #191919;
+}
+.prijzenCard:hover {
+  transform: scale(1.1);
 }
 
 .cardHeader, .cardContent, .cardFooter {
@@ -146,7 +144,7 @@
 
 .cardContent {
   width: 100%;
-  background-color: #f6f5f3;
+  filter: grayscale(30%);
 }
 
 .cardFooter {
@@ -405,24 +403,29 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .container h1 {
+    font-size: 4rem;
+  }
+
   .heroHeader h1, .heroHeader p {
     text-align: center;
-  }
-  .heroHeader h1 {
-    font-size: 4rem;
   }
   .heroHeader p {
     margin-left: 0;
   }
 
   .heroContent aside a {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .heroContent aside p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .websitesHeader h2 {
+    text-align: center;
+  }
+
+  .contactContainer p {
     text-align: center;
   }
 }
