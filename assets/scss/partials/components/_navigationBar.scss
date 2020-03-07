@@ -1,3 +1,4 @@
+// navigation bar
 #infoNav{
     width: 100%;
     padding-left: 1rem;
@@ -102,19 +103,38 @@
                 color: $colorDarkBlack;
             }
         }
-        .logoNav{
-            a{
-                font-family: $fontSrisakdi;
-                font-size: 5rem;
-                color: $colorRed;
-                text-transform: capitalize;
-                font-weight: bolder;
-                line-height: 1rem;
-                vertical-align: middle;
-                &:hover{
-                    color: $colorWhiteSmoke;
-                }
-            }
+    }
+}
+
+.logoNav{
+    a{
+        font-family: $fontSrisakdi;
+        font-size: 5rem;
+        color: $colorRed;
+        text-transform: capitalize;
+        font-weight: bolder;
+        line-height: 1rem;
+        vertical-align: middle;
+        &:hover{
+            color: $colorWhiteSmoke;
         }
+    }
+}
+
+// mobile navigation
+#mobileSiteNav{
+    background-color: $colorBlack;
+}
+.mobileContainer{
+    @extend %flexJcBetween;
+}
+.burgerNav{
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    i{
+        font-size: 4rem;
     }
 }

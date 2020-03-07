@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.voorwaardenFooter .voorwaardenContainer, #siteNav .siteNavContainer, #infoNav .infoNavContainer {
+.voorwaardenFooter .voorwaardenContainer, .mobileContainer, #siteNav .siteNavContainer, #infoNav .infoNavContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -287,7 +287,8 @@
 #siteNav .siteNavContainer .menu .activeText {
   color: #181818;
 }
-#siteNav .siteNavContainer .logoNav a {
+
+.logoNav a {
   font-family: "Srisakdi", cursive;
   font-size: 5rem;
   color: #c30005;
@@ -296,8 +297,21 @@
   line-height: 1rem;
   vertical-align: middle;
 }
-#siteNav .siteNavContainer .logoNav a:hover {
+.logoNav a:hover {
   color: #f5f5f5;
+}
+
+#mobileSiteNav {
+  background-color: #191919;
+}
+
+.burgerNav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.burgerNav i {
+  font-size: 4rem;
 }
 
 footer {
