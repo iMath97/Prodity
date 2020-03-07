@@ -122,7 +122,7 @@
 }
 
 // mobile navigation
-.mobileBtn{
+.mobileBtn, .activeMobileBtn{
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -134,11 +134,28 @@
         color: $colorWhiteSmoke;
     }
 }
-// #mobileSiteNav{
-//     background-color: $colorBlack;
-//     width: 100%;
+.mobileMenu{
+    background-color: $colorBlack;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
 
-//     position: fixed;
-//     top: 6rem;
-//     z-index: 6;
-// }
+    position: absolute;
+    top: -6rem;
+    left: 0;
+    z-index: 6;
+
+    @extend %flexCenter;
+    flex-direction: column;
+    .activeMobileBtn{
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
+    >a{
+        margin: 2rem;
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: $colorWhiteSmoke;
+    }
+}

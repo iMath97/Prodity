@@ -42,6 +42,11 @@
     justify-content: space-between;
     align-items: flex-start;
 }
+%flexJcCenterAiBetween{
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
 %flexJcStartAiBetween{
     display: flex;
     justify-content: start;

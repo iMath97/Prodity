@@ -1,33 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(){
-    // navigationChangeOnScroll();
     upBtnShowOnScroll();
     openingsurenUpdate();
     togglePriceBtn();
-    // mobileNavigation();
     desktopOrMobile();
+    navigationChangeOnScroll();
     // showroomRealisaties();
     // slideshow();
 })
-function navigationChangeOnScroll(){
-    let nav = document.getElementsByTagName("nav")[1];
-    let infoNav = document.getElementById("infoNav");
-    let btns = document.getElementsByClassName("navigationBtn");
-    document.addEventListener("scroll", function(){
-        if(scrollY >= 55){
-            nav.style = "opacity: .9; top: 0;";
-            for(let i = 0; i < btns.length; i++){
-                btns[i].style = "color: #f6f5f3;";
-            }
-            infoNav.style = "top: -6rem";
-        }else{
-            nav.style = "opacity: 1;";
-            for(let i = 0; i < btns.length; i++){
-                btns[i].style = "color: #f6f5f3;";
-            }
-            infoNav.style = "top: 0;";
-        }
-    });
-};
 
 function upBtnShowOnScroll(){
     let upBtn = document.getElementsByClassName("upBtn");
@@ -40,6 +19,7 @@ function upBtnShowOnScroll(){
     });
 }
 
+// auto change openingsuren each day
 function openingsurenUpdate(){
     $('.updateOpeningsuren > p').hide();
     let d = new Date().getDay();
@@ -68,6 +48,7 @@ function openingsurenUpdate(){
     }
 }
 
+// price checkbox
 function togglePriceBtn(){
     $('.maandelijks').hide();
     $('.checkBtn').click(function () {
@@ -83,53 +64,77 @@ function togglePriceBtn(){
     });
 }
 
-function mobileNavigation(){
-    $('#mobileBg').hide();
-    $('#mobileBtn').click(function () {
-        $('#mobileBg').show();
-    });
-    $('#mobileBtnClose').click(function () {
-        $('#mobileBg').hide();
-    });
-}
-
 function desktopOrMobile(){
     let screenWidth = window.matchMedia("(max-width: 850px)");
     if (screenWidth.matches){
         $('.menu').hide();
         $('.backgroundRed').hide();
         $('.mobileBtn').show();
+        mobileNav();
     }else{
         $('.mobileBtn').hide();
         $('.backgroundRed').show();
         $('.menu').show();
-        navigationChangeOnScroll();
     }
 }
 
-/* mobile nav */
+// navigation fixed on scroll
+function navigationChangeOnScroll(){
+    let nav = document.getElementById("siteNav");
+    let infoNav = document.getElementById("infoNav");
+    let btns = document.getElementsByClassName("navigationBtn");
+    document.addEventListener("scroll", function(){
+        if(scrollY >= 55){
+            nav.style = "opacity: .9; top: 0;";
+            for(let i = 0; i < btns.length; i++){
+                btns[i].style = "color: #f6f5f3;";
+            }
+            infoNav.style = "top: -6rem";
+        }else{
+            nav.style = "opacity: 1;";
+            for(let i = 0; i < btns.length; i++){
+                btns[i].style = "color: #f6f5f3;";
+            }
+            infoNav.style = "top: 0;";
+        }
+    });
+};
+
+// mobile navigation
 function mobileNav(){
-    let windowWidth = 700;
-    $("#siteNav").hide();
-    if($(window).outerWidth() > windowWidth){
-        $("#btns").fadeIn();
-    }
-    $(".burger").click(function (e) { 
-        e.preventDefault();
-        this.classList.toggle("change");
-        if($(".btn2").css("display") == "none"){
-            $("#btns").fadeIn();
-        }else{
-            $("#btns").fadeOut();
-        }
+    $('.mobileMenu').hide();
+    $('.mobileBtn').click(function () {
+        $('.mobileBtn').hide();
+        // $('#infoNav').hide();
+        $('.mobileMenu').show();
     });
-    $(window).resize(function () {
-        if($(window).outerWidth() > windowWidth){
-            $("#btns").fadeIn();
-        }else{
-            $("#btns").fadeOut(1);
-        }
+    $('.activeMobileBtn').click(function () {
+        $('.mobileBtn').show();
+        // $('#infoNav').show();
+        $('.mobileMenu').hide();
     });
+
+    // let windowWidth = 700;
+    // $("#siteNav").hide();
+    // if($(window).outerWidth() > windowWidth){
+    //     $("#btns").fadeIn();
+    // }
+    // $(".burger").click(function (e) { 
+    //     e.preventDefault();
+    //     this.classList.toggle("change");
+    //     if($(".btn2").css("display") == "none"){
+    //         $("#btns").fadeIn();
+    //     }else{
+    //         $("#btns").fadeOut();
+    //     }
+    // });
+    // $(window).resize(function () {
+    //     if($(window).outerWidth() > windowWidth){
+    //         $("#btns").fadeIn();
+    //     }else{
+    //         $("#btns").fadeOut(1);
+    //     }
+    // });
 }
 
 function showroomRealisaties(){
@@ -138,6 +143,10 @@ function showroomRealisaties(){
     });
 }
 
+
+
+
+// slideshow
 function slideshow(){
     var swiper = new Swiper('.swiper-container', {
         spaceBetween: -400,

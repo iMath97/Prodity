@@ -10,7 +10,7 @@
     extends
 */
 /**/
-.voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoContainer, .infoNavContainer .openingsurenNav, .prijzenCard, .prijzenCheckbox button, .prijzenHeader, .cards {
+.voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoContainer, .mobileMenu, .infoNavContainer .openingsurenNav, .prijzenCard, .prijzenCheckbox button, .prijzenHeader, .cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,15 +302,38 @@
   color: #f5f5f5;
 }
 
-.mobileBtn {
+.mobileBtn, .activeMobileBtn {
   background-color: transparent;
   border: none;
   cursor: pointer;
   position: relative;
   z-index: 5;
 }
-.mobileBtn i {
+.mobileBtn i, .activeMobileBtn i {
   font-size: 4rem;
+  color: #f5f5f5;
+}
+
+.mobileMenu {
+  background-color: #191919;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  position: absolute;
+  top: -6rem;
+  left: 0;
+  z-index: 6;
+  flex-direction: column;
+}
+.mobileMenu .activeMobileBtn {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.mobileMenu > a {
+  margin: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
   color: #f5f5f5;
 }
 
