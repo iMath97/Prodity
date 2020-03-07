@@ -631,6 +631,9 @@ p {
   font-size: 1.8rem;
   color: #191919;
 }
+.contactInfoContainer aside:first-of-type {
+  width: 25rem;
+}
 .contactInfoContainer .phone p:last-of-type {
   font-size: 1.4rem;
 }

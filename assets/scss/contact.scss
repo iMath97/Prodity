@@ -86,6 +86,9 @@
                 color: $colorBlack;
             }
         }
+        &:first-of-type{
+            width: 25rem;
+        }
     }
     .phone{
         p:last-of-type{
