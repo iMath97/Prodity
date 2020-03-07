@@ -66,8 +66,17 @@ function openingsurenUpdate(){
 }
 
 function togglePriceBtn(){
+    $('.maandelijks').hide();
     $('.checkBtn').click(function () { 
         $('.checkBtn').toggleClass('activeCheckbox');
+        let jaarlijks = $('.btnJaarlijks');
+        if(jaarlijks.hasClass('activeCheckbox')){
+            $('.maandelijks').hide();
+            $('.jaarlijks').show();
+        }else{
+            $('.jaarlijks').hide();
+            $('.maandelijks').show();
+        }
     });
 }
 
