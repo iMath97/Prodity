@@ -281,15 +281,6 @@
   top: 6rem;
   z-index: 4;
 }
-#siteNav .backgroundRed {
-  background-color: #c30005;
-  position: fixed;
-  top: 6;
-  left: 0;
-  width: 40%;
-  height: 5rem;
-  z-index: 1;
-}
 #siteNav .siteNavContainer {
   width: 100%;
   height: 5.75rem;
