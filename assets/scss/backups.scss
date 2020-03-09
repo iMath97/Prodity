@@ -1,1 +1,56 @@
 @import './partials/global';
+
+// h1
+h1{
+    text-align: center;
+}
+
+.setupContainer, .backupsContainer, .onderhoudContainer {
+    padding: 4rem 0;
+}
+
+// verkoop freenas
+#verkoopfreenas {
+    background-color: $colorBrokenWhite;
+
+    .textBackup {
+        @extend %flexJcAround;
+
+        img {
+            width: 50rem;
+        }
+    }
+}
+
+// setup freenas
+#setupfreenas {
+    .textBackup {
+        @extend %flexJcAround;
+
+        img {
+            width: 50rem;
+        }
+    }
+}
+
+// onderhoud
+#onderhoud {
+    background-color: $colorBrokenWhite;
+
+    .textBackup {
+        @extend %flexJcAround;
+
+        img {
+            width: 50rem;
+        }
+    }
+}
+
+// cards
+.prijzenCard {
+    &:nth-child(1) {
+        .cardFooter {
+            padding-bottom: 3rem;
+        }
+    }
+}
