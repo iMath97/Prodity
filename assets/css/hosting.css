@@ -653,7 +653,8 @@ h1 {
   width: 50rem;
 }
 #support .textSupport p {
-  max-width: 80rem;
+  min-width: 40rem;
+  flex: 2;
 }
 
 #security .textSecurity {
@@ -663,7 +664,8 @@ h1 {
   width: 50rem;
 }
 #security .textSecurity p {
-  max-width: 80rem;
+  min-width: 40rem;
+  flex: 2;
 }
 
 #prijzen {

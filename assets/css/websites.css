@@ -760,6 +760,7 @@ h1 {
 }
 .seoContent img {
   width: 50rem;
+  margin: auto;
 }
 .seoContent p {
   min-width: 40rem;

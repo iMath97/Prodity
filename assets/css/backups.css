@@ -631,28 +631,56 @@ p {
 
 h1 {
   text-align: center;
+  margin-bottom: 5rem;
 }
 
-.setupContainer, .backupsContainer, .onderhoudContainer {
-  padding: 4rem 0;
+.setupContainer, .backupsContainer, .freenasContainer, .onderhoudContainer {
+  padding: 4rem 1rem;
+}
+
+.quality {
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 #verkoopfreenas {
   background-color: #f6f5f3;
+  padding: 4rem 0;
+}
+#verkoopfreenas .textBackup {
+  flex-flow: row wrap;
 }
 #verkoopfreenas .textBackup img {
   width: 50rem;
 }
+#verkoopfreenas .textBackup p {
+  min-width: 40rem;
+  flex: 2;
+}
 
+#setupfreenas .textBackup {
+  flex-flow: row wrap;
+}
 #setupfreenas .textBackup img {
   width: 50rem;
+}
+#setupfreenas .textBackup p {
+  min-width: 40rem;
+  flex: 2;
 }
 
 #onderhoud {
   background-color: #f6f5f3;
 }
+#onderhoud .textBackup {
+  flex-flow: row wrap;
+}
 #onderhoud .textBackup img {
   width: 50rem;
+}
+#onderhoud .textBackup p {
+  min-width: 40rem;
+  flex: 2;
 }
 
 .prijzenCard:nth-child(1) .cardFooter {
