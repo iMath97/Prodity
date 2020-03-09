@@ -18,32 +18,29 @@ h1{
 #support {
     background-color: $colorBrokenWhite;
     padding: 4rem 0;
-
-    .textSupport {
-        @extend %flexJcAround;
-        flex-flow: row wrap;
-        img {
-            width: 50rem;
-        }
-        p{
-            min-width: 40rem;
-            flex: 2;
-        }
+}
+.textSupport {
+    @extend %flexJcAround;
+    flex-flow: row wrap;
+    img {
+        width: 50rem;
+    }
+    p{
+        min-width: 40rem;
+        flex: 2;
     }
 }
 
 // security
-#security {
-    .textSecurity {
-        @extend %flexJcAround;
-        flex-flow: row wrap;
-        img {
-            width: 50rem;
-        }
-        p{
-            min-width: 40rem;
-            flex: 2;
-        }
+.textSecurity {
+    @extend %flexJcAround;
+    flex-flow: row wrap;
+    img {
+        width: 50rem;
+    }
+    p{
+        min-width: 40rem;
+        flex: 2;
     }
 }
 

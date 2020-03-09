@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-#onderhoud .textBackup, #setupfreenas .textBackup, #verkoopfreenas .textBackup, .prijzenCheckbox {
+.textBackup, .prijzenCheckbox {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -481,6 +481,19 @@ footer {
   .openingsurenNav .updateOpeningsuren a {
     font-size: 1rem;
   }
+
+  #seo img, #support img, #security img, #verkoopfreenas img, #setupfreenas img, #onderhoud img, #verkoopcomputer img, #onderhoudcomputer img, #herstellingencomputer img {
+    width: 30rem;
+  }
+  #seo p, #support p, #security p, #verkoopfreenas p, #setupfreenas p, #onderhoud p, #verkoopcomputer p, #onderhoudcomputer p, #herstellingencomputer p {
+    text-align: center;
+    max-width: 32rem;
+    min-width: 20rem;
+  }
+
+  .toegankelijkheidContainer .toegankelijkheidHeader h2 {
+    font-size: 3.5rem;
+  }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -519,7 +532,7 @@ footer {
   }
 
   .toegankelijkheidHeader h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -651,24 +664,25 @@ h1 {
   background-color: #f6f5f3;
   padding: 4rem 0;
 }
-#verkoopfreenas .textBackup {
+
+.textBackup {
   flex-flow: row wrap;
 }
-#verkoopfreenas .textBackup img {
+.textBackup img {
   width: 50rem;
 }
-#verkoopfreenas .textBackup p {
+.textBackup p {
   min-width: 40rem;
   flex: 2;
 }
 
-#setupfreenas .textBackup {
+.textBackup {
   flex-flow: row wrap;
 }
-#setupfreenas .textBackup img {
+.textBackup img {
   width: 50rem;
 }
-#setupfreenas .textBackup p {
+.textBackup p {
   min-width: 40rem;
   flex: 2;
 }
@@ -676,13 +690,14 @@ h1 {
 #onderhoud {
   background-color: #f6f5f3;
 }
-#onderhoud .textBackup {
+
+.textBackup {
   flex-flow: row wrap;
 }
-#onderhoud .textBackup img {
+.textBackup img {
   width: 50rem;
 }
-#onderhoud .textBackup p {
+.textBackup p {
   min-width: 40rem;
   flex: 2;
 }

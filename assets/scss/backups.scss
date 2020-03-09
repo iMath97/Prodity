@@ -20,49 +20,45 @@ h1{
 #verkoopfreenas {
     background-color: $colorBrokenWhite;
     padding: 4rem 0;
-
-    .textBackup {
-        @extend %flexJcAround;
-        flex-flow: row wrap;
-        img {
-            width: 50rem;
-        }
-        p{
-            min-width: 40rem;
-            flex: 2;
-        }
+}
+.textBackup {
+    @extend %flexJcAround;
+    flex-flow: row wrap;
+    img {
+        width: 50rem;
+    }
+    p{
+        min-width: 40rem;
+        flex: 2;
     }
 }
 
 // setup freenas
-#setupfreenas {
-    .textBackup {
-        @extend %flexJcAround;
-        flex-flow: row wrap;
-        img {
-            width: 50rem;
-        }
-        p{
-            min-width: 40rem;
-            flex: 2;
-        }
+.textBackup {
+    @extend %flexJcAround;
+    flex-flow: row wrap;
+    img {
+        width: 50rem;
+    }
+    p{
+        min-width: 40rem;
+        flex: 2;
     }
 }
 
 // onderhoud
 #onderhoud {
     background-color: $colorBrokenWhite;
-
-    .textBackup {
-        @extend %flexJcAround;
-        flex-flow: row wrap;
-        img {
-            width: 50rem;
-        }
-        p{
-            min-width: 40rem;
-            flex: 2;
-        }
+}
+.textBackup {
+    @extend %flexJcAround;
+    flex-flow: row wrap;
+    img {
+        width: 50rem;
+    }
+    p{
+        min-width: 40rem;
+        flex: 2;
     }
 }
 

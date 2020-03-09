@@ -20,34 +20,32 @@ h1{
 #verkoopcomputer {
     background-color: $colorBrokenWhite;
     padding: 4rem 0;
-
-    .textBackup {
-        @extend %flexJcAround;
-        flex-flow: row wrap;
-        img {
-            width: 50rem;
-        }
-        p{
-            min-width: 40rem;
-            flex: 2;
-        }
+}
+.textBackup {
+    @extend %flexJcAround;
+    flex-flow: row wrap;
+    img {
+        width: 50rem;
+    }
+    p{
+        min-width: 40rem;
+        flex: 2;
     }
 }
 
 // onderhoud computer
 #onderhoudcomputer {
     padding: 4rem 0;
-
-    .textBackup {
-        @extend %flexJcAround;
-        flex-flow: row wrap;
-        img {
-            width: 50rem;
-        }
-        p{
-            min-width: 40rem;
-            flex: 2;
-        }
+}
+.textBackup {
+    @extend %flexJcAround;
+    flex-flow: row wrap;
+    img {
+        width: 50rem;
+    }
+    p{
+        min-width: 40rem;
+        flex: 2;
     }
 }
 
@@ -55,16 +53,15 @@ h1{
 #herstellingencomputer {
     background-color: $colorBrokenWhite;
     padding: 4rem 0;
-
-    .textBackup {
-        @extend %flexJcAround;
-        flex-flow: row wrap;
-        img {
-            height: 30rem;
-        }
-        p{
-            min-width: 40rem;
-            flex: 2;
-        }
+}
+.textBackup {
+    @extend %flexJcAround;
+    flex-flow: row wrap;
+    img {
+        height: 30rem;
+    }
+    p{
+        min-width: 40rem;
+        flex: 2;
     }
 }

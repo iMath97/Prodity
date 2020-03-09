@@ -17,6 +17,23 @@
             }
         }
     }
+    #seo, #support, #security, #verkoopfreenas, #setupfreenas, #onderhoud, #verkoopcomputer, #onderhoudcomputer, #herstellingencomputer{
+        img{
+            width: 30rem;
+        }
+        p{
+            text-align: center;;
+            max-width: 32rem;
+            min-width: 20rem;
+        }
+    }
+    .toegankelijkheidContainer{
+        .toegankelijkheidHeader{
+            h2{
+                font-size: 3.5rem;
+            }
+        }
+    }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -69,7 +86,7 @@
     }
     .toegankelijkheidHeader{
         h2{
-            font-size: 4rem;
+            font-size: 4.5rem;
         }
     }
 }
