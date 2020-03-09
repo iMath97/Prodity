@@ -561,6 +561,15 @@ footer {
   .toegankelijkheidHeader h2 {
     font-size: 4.5rem;
   }
+
+  .seoContainer .seoContent img {
+    width: 40rem;
+  }
+  .seoContainer .seoContent p {
+    text-align: center;
+    max-width: 42rem;
+    min-width: 30rem;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
