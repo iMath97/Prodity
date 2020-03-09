@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.prijzenCheckbox {
+#herstellingencomputer .textBackup, #onderhoudcomputer .textBackup, #verkoopcomputer .textBackup, .prijzenCheckbox {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -627,6 +627,64 @@ h4 {
 
 p {
   font-family: "Kalam";
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.headContainer, .computerContainer, .onderhoudContainer, .herstellingenContainer {
+  padding: 4rem 1rem;
+}
+
+.quality {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+#verkoopcomputer {
+  background-color: #f6f5f3;
+  padding: 4rem 0;
+}
+#verkoopcomputer .textBackup {
+  flex-flow: row wrap;
+}
+#verkoopcomputer .textBackup img {
+  width: 50rem;
+}
+#verkoopcomputer .textBackup p {
+  min-width: 40rem;
+  flex: 2;
+}
+
+#onderhoudcomputer {
+  padding: 4rem 0;
+}
+#onderhoudcomputer .textBackup {
+  flex-flow: row wrap;
+}
+#onderhoudcomputer .textBackup img {
+  width: 50rem;
+}
+#onderhoudcomputer .textBackup p {
+  min-width: 40rem;
+  flex: 2;
+}
+
+#herstellingencomputer {
+  background-color: #f6f5f3;
+  padding: 4rem 0;
+}
+#herstellingencomputer .textBackup {
+  flex-flow: row wrap;
+}
+#herstellingencomputer .textBackup img {
+  height: 40rem;
+}
+#herstellingencomputer .textBackup p {
+  min-width: 40rem;
+  flex: 2;
 }
 
 /*# sourceMappingURL=compServices.css.map */

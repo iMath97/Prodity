@@ -1,1 +1,70 @@
 @import './partials/global';
+
+// h1
+h1{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.headContainer, .computerContainer, .onderhoudContainer, .herstellingenContainer {
+    padding: 4rem 1rem;
+}
+
+// quality
+.quality{
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+// verkoop computer
+#verkoopcomputer {
+    background-color: $colorBrokenWhite;
+    padding: 4rem 0;
+
+    .textBackup {
+        @extend %flexJcAround;
+        flex-flow: row wrap;
+        img {
+            width: 50rem;
+        }
+        p{
+            min-width: 40rem;
+            flex: 2;
+        }
+    }
+}
+
+// onderhoud computer
+#onderhoudcomputer {
+    padding: 4rem 0;
+
+    .textBackup {
+        @extend %flexJcAround;
+        flex-flow: row wrap;
+        img {
+            width: 50rem;
+        }
+        p{
+            min-width: 40rem;
+            flex: 2;
+        }
+    }
+}
+
+// herstellingen computer
+#herstellingencomputer {
+    background-color: $colorBrokenWhite;
+    padding: 4rem 0;
+
+    .textBackup {
+        @extend %flexJcAround;
+        flex-flow: row wrap;
+        img {
+            height: 40rem;
+        }
+        p{
+            min-width: 40rem;
+            flex: 2;
+        }
+    }
+}
