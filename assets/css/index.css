@@ -535,6 +535,10 @@ footer {
   .hostingContainer .hostingContent .hostingRight img {
     width: 25rem;
   }
+
+  .toegankelijkheidHeader h2 {
+    font-size: 4rem;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
