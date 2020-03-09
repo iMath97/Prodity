@@ -494,6 +494,15 @@ footer {
   .toegankelijkheidContainer .toegankelijkheidHeader h2 {
     font-size: 3.5rem;
   }
+
+  #visitekaarten .visitekaartenContainer .visitekaart {
+    height: 35rem;
+    width: 20rem;
+  }
+  #visitekaarten .visitekaartenContainer .visitekaart img {
+    height: 35rem;
+    width: 20rem;
+  }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

@@ -34,6 +34,23 @@
             }
         }
     }
+    #visitekaarten{
+        .visitekaartenContainer{
+            // display: grid;
+            // grid-template-columns: repeat(auto-fill, minmax(30rem, 30rem));
+            // justify-items: center;
+            // justify-content: center;
+            // gap: 1rem;
+            .visitekaart{
+                height: 35rem;
+                width: 20rem;
+                img{
+                    height: 35rem;
+                    width: 20rem;
+                }
+            }
+        }
+    }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
