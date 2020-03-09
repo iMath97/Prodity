@@ -64,6 +64,7 @@ function togglePriceBtn(){
     });
 }
 
+// desktop or mobile
 function desktopOrMobile(){
     let screenWidth = window.matchMedia("(max-width: 850px)");
     if (screenWidth.matches){
@@ -77,6 +78,20 @@ function desktopOrMobile(){
         $('.menu').show();
         $('.mobileMenu').hide();
     }
+    $(window).resize(function () {
+        let windowWidth = 850;
+        if($(window).outerWidth() < windowWidth){
+            $('.menu').hide();
+            $('.backgroundRed').hide();
+            $('.mobileBtn').show();
+            mobileNav();
+        }else{
+            $('.mobileBtn').hide();
+            $('.backgroundRed').show();
+            $('.menu').show();
+            $('.mobileMenu').hide();
+        }
+    });
 }
 
 // mobile navigation
@@ -114,36 +129,11 @@ function navigationChangeOnScroll(){
     });
 };
 
-// let windowWidth = 700;
-// $("#siteNav").hide();
-// if($(window).outerWidth() > windowWidth){
-//     $("#btns").fadeIn();
-// }
-// $(".burger").click(function (e) { 
-//     e.preventDefault();
-//     this.classList.toggle("change");
-//     if($(".btn2").css("display") == "none"){
-//         $("#btns").fadeIn();
-//     }else{
-//         $("#btns").fadeOut();
-//     }
-// });
-// $(window).resize(function () {
-//     if($(window).outerWidth() > windowWidth){
-//         $("#btns").fadeIn();
-//     }else{
-//         $("#btns").fadeOut(1);
-//     }
-// });
-
 function showroomRealisaties(){
     $('.realisatieTop').click(function () {
         $('.realisatieShowroom').append('.realisatieCard');
     });
 }
-
-
-
 
 // slideshow
 function slideshow(){

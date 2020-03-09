@@ -4,7 +4,7 @@ footer{
 }
 .infoFooter{
     // background-image: linear-gradient(to bottom, $colorLightRed, $colorDarkRed);
-    background-color: $colorDarkBlue;
+    background-color: $colorLightGrey;
 }
 .infoContainer{
     padding: 3rem 0;
@@ -16,9 +16,12 @@ footer{
             font-weight: bolder;
             line-height: 5.4rem;
             letter-spacing: .2rem;
+            &:hover{
+                color: $colorRed;
+            }
         }
         p{
-            color: $colorWhiteSmoke;
+            color: $colorDarkGrey;
             font-size: 2rem;
             line-height: 2.4rem;
         }

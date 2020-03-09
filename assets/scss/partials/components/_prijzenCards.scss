@@ -39,7 +39,11 @@
         }
     }
     .activeCheckbox{
-        background-color: $colorBlue;
+        background-image: repeating-linear-gradient(45deg,
+            $colorDarkGrey, $colorDarkGrey .2rem,
+            $colorDarkBlack .2rem, $colorDarkBlack 1.2rem
+        );
+        border: .2rem solid $colorWhiteSmoke;
     }
 }
 
@@ -64,14 +68,18 @@
     flex-direction: column;
     &:nth-child(1){
         .cardContent{
-            background-color: $colorYellow;
+            background-image: repeating-linear-gradient(45deg,
+                $colorYellow, $colorYellow .1rem,
+                $colorWhiteSmoke .1rem, $colorWhiteSmoke 1.2rem
+            );
+            // background-color: $colorYellow;
         }
         .cardFooter{
             width: 100%;
             padding-left: 5.5rem;
             padding-bottom: 8rem;
             a{
-                background-color: $colorYellow;
+                background-color: $colorBrokenWhite;
                 color: $colorBlack;
                 width: 100%;
                 text-align: center;
@@ -80,49 +88,81 @@
                 border-bottom-right-radius: .6rem;
                 text-transform: capitalize;
 
+                transition: background-color .5s ease;
+
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 &:hover{
-                    background-color: $colorWhite;
+                    background-color: $colorRed;
                 }
             }
         }
     }
     &:nth-child(2){
         .cardContent{
-            background-color: $colorGreen;
+            background-image: repeating-linear-gradient(45deg,
+                $colorGreen, $colorGreen .1rem,
+                $colorWhiteSmoke .1rem, $colorWhiteSmoke 1.2rem
+            );
+            // background-color: $colorGreen;
         }
     }
     &:nth-child(3){
         .cardContent{
-            background-color: $colorBlue;
+            background-image: repeating-linear-gradient(45deg,
+                $colorBlue, $colorBlue .1rem,
+                $colorWhiteSmoke .1rem, $colorWhiteSmoke 1.2rem
+            );
+            // background-color: $colorBlue;
         }
     }
     &:nth-child(4){
         .cardContent{
-            background-color: $colorLightRed;
+            background-image: repeating-linear-gradient(45deg,
+                $colorLightGrey, $colorLightGrey .1rem,
+                $colorWhiteSmoke .1rem, $colorWhiteSmoke 1.2rem
+            );
+            // background-color: $colorLightRed;
         }
     }
     &:nth-child(5){
         .cardContent{
-            background-color: $colorBrokenWhite;
+            background-image: repeating-linear-gradient(45deg,
+                $colorLightRed, $colorLightRed .1rem,
+                $colorWhiteSmoke .1rem, $colorWhiteSmoke 1.2rem
+            );
+            // background-color: $colorBrokenWhite;
         }
     }
     .cardContent{
         color: $colorBlack;
     }
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 .cardHeader, .cardContent, .cardFooter{
     padding: 3rem;
     text-align: center;
 }
+.cardHeader{
+    p{
+        font-size: 2rem;
+    }
+}
 .cardContent{
     width: 100%;
-    filter: grayscale(30%);
+    // filter: grayscale(30%);
+    font-size: 5rem;
+    p{
+        font-family: $fontAlice;
+        font-weight: bolder;
+        span{
+            font-size: 2rem;
+            font-family: $fontAlice;
+        }
+    }
 }
 .cardFooter{
     width: 21rem;

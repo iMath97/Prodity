@@ -1,0 +1,662 @@
+/*
+    colors
+*/
+/**/
+/*
+    fonts
+*/
+/**/
+/*
+    extends
+*/
+/**/
+.voorwaardenFooter .voorwaardenContainer .iconsThirdParty, .contentFooter .contentContainer .dienstenFooter .footerNav, .infoContainer, .mobileMenu, .infoNavContainer .openingsurenNav, .prijzenCard, .prijzenCheckbox button, .prijzenHeader, .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voorwaardenFooter .voorwaardenContainer, #siteNav .siteNavContainer, .infoNavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#onderhoud .textBackup, #setupfreenas .textBackup, #verkoopfreenas .textBackup, .prijzenCheckbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contentFooter .contentContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.prijzenCards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/*
+    Mixins
+*/
+/**/
+/*
+    cards
+*/
+/**/
+.cards {
+  flex-flow: row wrap;
+}
+.cards .card {
+  width: 20rem;
+  margin: 2rem 1rem;
+  text-align: center;
+  align-self: start;
+}
+.cards .card > p {
+  line-height: 2rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.prijzenHeader {
+  padding: 2rem 0;
+}
+
+.prijzenCheckbox {
+  background-color: #191919;
+  padding: 0.3rem;
+  border-radius: 0.8rem;
+  width: 40rem;
+}
+.prijzenCheckbox button {
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0.1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.prijzenCheckbox button p {
+  font-family: "Della Respira";
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+.prijzenCheckbox button:nth-child(1) {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.prijzenCheckbox button:nth-child(2) {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.prijzenCheckbox .activeCheckbox {
+  background-image: repeating-linear-gradient(45deg, #404040, #404040 0.2rem, #181818 0.2rem, #181818 1.2rem);
+  border: 0.2rem solid #f5f5f5;
+}
+
+.prijzenCards {
+  padding: 3rem 0;
+  flex-flow: row wrap;
+}
+
+.prijzenCard {
+  width: 26rem;
+  margin: 1rem;
+  border-radius: 0.6rem;
+  background-color: #191919;
+  color: #f5f5f5;
+  box-shadow: 0.1rem 0.1rem 1rem #c0c0c0;
+  transition: transform 0.5s ease;
+  flex-direction: column;
+}
+.prijzenCard:nth-child(1) .cardContent {
+  background-image: repeating-linear-gradient(45deg, burlywood, burlywood 0.1rem, #f5f5f5 0.1rem, #f5f5f5 1.2rem);
+}
+.prijzenCard:nth-child(1) .cardFooter {
+  width: 100%;
+  padding-left: 5.5rem;
+  padding-bottom: 8rem;
+}
+.prijzenCard:nth-child(1) .cardFooter a {
+  background-color: #f6f5f3;
+  color: #191919;
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  text-transform: capitalize;
+  transition: background-color 0.5s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.prijzenCard:nth-child(1) .cardFooter a:hover {
+  background-color: #c30005;
+}
+.prijzenCard:nth-child(2) .cardContent {
+  background-image: repeating-linear-gradient(45deg, yellowgreen, yellowgreen 0.1rem, #f5f5f5 0.1rem, #f5f5f5 1.2rem);
+}
+.prijzenCard:nth-child(3) .cardContent {
+  background-image: repeating-linear-gradient(45deg, lightskyblue, lightskyblue 0.1rem, #f5f5f5 0.1rem, #f5f5f5 1.2rem);
+}
+.prijzenCard:nth-child(4) .cardContent {
+  background-image: repeating-linear-gradient(45deg, #d3d3d3, #d3d3d3 0.1rem, #f5f5f5 0.1rem, #f5f5f5 1.2rem);
+}
+.prijzenCard:nth-child(5) .cardContent {
+  background-image: repeating-linear-gradient(45deg, #ff0000, #ff0000 0.1rem, #f5f5f5 0.1rem, #f5f5f5 1.2rem);
+}
+.prijzenCard .cardContent {
+  color: #191919;
+}
+.prijzenCard:hover {
+  transform: scale(1.05);
+}
+
+.cardHeader, .cardContent, .cardFooter {
+  padding: 3rem;
+  text-align: center;
+}
+
+.cardHeader p {
+  font-size: 2rem;
+}
+
+.cardContent {
+  width: 100%;
+  font-size: 5rem;
+}
+.cardContent p {
+  font-family: "Alice";
+  font-weight: bolder;
+}
+.cardContent p span {
+  font-size: 2rem;
+  font-family: "Alice";
+}
+
+.cardFooter {
+  width: 21rem;
+  text-align: left;
+  position: relative;
+}
+.cardFooter p {
+  text-transform: capitalize;
+}
+.cardFooter i {
+  color: #c30005;
+  margin-right: 0.5rem;
+}
+
+.upBtn {
+  opacity: 0;
+  position: fixed;
+  bottom: 12rem;
+  right: 6rem;
+  z-index: 6;
+}
+.upBtn a {
+  background-color: #c30005;
+  padding: 1.6rem 2rem;
+}
+.upBtn a i {
+  font-size: 2rem;
+}
+
+#infoNav {
+  width: 100%;
+  height: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #f5f5f5;
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+}
+
+.infoNavContainer {
+  height: 6rem;
+}
+.infoNavContainer .openingsurenNav {
+  flex-direction: row;
+}
+.infoNavContainer .openingsurenNav > i {
+  font-size: 2.4rem;
+  margin-right: 0.7rem;
+}
+
+.socialNav i {
+  font-size: 3.5rem;
+  color: #181818;
+  margin-left: 0.7rem;
+}
+.socialNav i:hover {
+  color: #880000;
+}
+
+.updateOpeningsuren p {
+  font-size: 2.6rem;
+  line-height: 2rem;
+  text-transform: capitalize;
+}
+.updateOpeningsuren a {
+  font-size: 1.3rem;
+  margin-top: 0.3rem;
+  text-decoration: underline;
+  color: #808080;
+}
+.updateOpeningsuren a:hover {
+  color: #181818;
+}
+
+#siteNav {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #191919;
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 6rem;
+  z-index: 4;
+}
+#siteNav .siteNavContainer {
+  width: 100%;
+  height: 5.75rem;
+}
+#siteNav .siteNavContainer .menu a {
+  padding: 1.55rem 1.5rem;
+  color: #f5f5f5;
+  text-transform: capitalize;
+  font-family: "Alice";
+  font-size: 1.7rem;
+  border-bottom: 0.4rem solid transparent;
+  position: relative;
+  z-index: 2;
+  background-color: #181818;
+}
+#siteNav .siteNavContainer .menu a:nth-of-type(1) {
+  border-bottom: 0.4rem solid #f5f5f5;
+}
+#siteNav .siteNavContainer .menu a:nth-of-type(2) {
+  border-bottom: 0.4rem solid #c30005;
+}
+#siteNav .siteNavContainer .menu a:nth-of-type(3) {
+  border-bottom: 0.4rem solid yellowgreen;
+}
+#siteNav .siteNavContainer .menu a:nth-of-type(4) {
+  border-bottom: 0.4rem solid burlywood;
+}
+#siteNav .siteNavContainer .menu a:nth-of-type(5) {
+  border-bottom: 0.4rem solid lightskyblue;
+}
+#siteNav .siteNavContainer .menu a:nth-of-type(6) {
+  border-bottom: 0.4rem solid #c0c0c0;
+}
+#siteNav .siteNavContainer .menu a:hover {
+  border-bottom: 0.4rem solid #c30005;
+}
+#siteNav .siteNavContainer .menu .active {
+  border-bottom: 0.4rem solid #f5f5f5;
+}
+
+.logoNav a {
+  font-family: "Srisakdi", cursive;
+  font-size: 5rem;
+  color: #c30005;
+  text-transform: capitalize;
+  font-weight: bolder;
+  line-height: 1rem;
+  vertical-align: middle;
+}
+.logoNav a:hover {
+  color: #f5f5f5;
+}
+
+.mobileBtn, .activeMobileBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+.mobileBtn i, .activeMobileBtn i {
+  font-size: 4rem;
+  color: #f5f5f5;
+}
+
+.mobileMenu {
+  background-color: #191919;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  position: absolute;
+  top: -6rem;
+  left: 0;
+  z-index: 6;
+  flex-direction: column;
+}
+.mobileMenu .activeMobileBtn {
+  position: absolute;
+  top: 6.5rem;
+  left: 1.5rem;
+}
+.mobileMenu > a {
+  margin: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #f5f5f5;
+}
+
+footer {
+  position: relative;
+  z-index: 3;
+}
+
+.infoFooter {
+  background-color: #d3d3d3;
+}
+
+.infoContainer {
+  padding: 3rem 0;
+  flex-direction: column;
+}
+.infoContainer > a {
+  color: #191919;
+  font-size: 3.6rem;
+  font-weight: bolder;
+  line-height: 5.4rem;
+  letter-spacing: 0.2rem;
+}
+.infoContainer > a:hover {
+  color: #c30005;
+}
+.infoContainer p {
+  color: #404040;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.contentFooter {
+  background-color: #181818;
+}
+.contentFooter .contentContainer {
+  padding: 3rem 0;
+  max-width: 100rem;
+  flex-flow: row wrap;
+}
+.contentFooter .contentContainer > div > p {
+  color: #c30005;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.contentFooter .contentContainer .adresFooter > p {
+  text-align: center;
+}
+.contentFooter .contentContainer .adresFooter .adres > p {
+  color: #f5f5f5;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+}
+.contentFooter .contentContainer .adresFooter .social {
+  margin-top: 1rem;
+}
+.contentFooter .contentContainer .adresFooter .social i {
+  color: #f5f5f5;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+.contentFooter .contentContainer .adresFooter .social i:hover {
+  color: #c30005;
+}
+.contentFooter .contentContainer .dienstenFooter > p {
+  text-align: center;
+}
+.contentFooter .contentContainer .dienstenFooter .footerNav {
+  flex-direction: column;
+}
+.contentFooter .contentContainer .dienstenFooter .footerNav > a {
+  color: #f5f5f5;
+  text-transform: capitalize;
+  font-family: "Kalam";
+  transition: 0.3s;
+}
+.contentFooter .contentContainer .dienstenFooter .footerNav > a:hover {
+  color: #c30005;
+}
+
+.voorwaardenFooter .voorwaardenContainer {
+  padding: 1rem 0;
+}
+.voorwaardenFooter .voorwaardenContainer .voorwaarden a {
+  color: #181818;
+  border-bottom: 1px solid #181818;
+  text-transform: capitalize;
+  margin-right: 1rem;
+}
+.voorwaardenFooter .voorwaardenContainer .voorwaarden a:hover {
+  color: #c30005;
+  border-bottom: 1px solid #c30005;
+}
+.voorwaardenFooter .voorwaardenContainer .iconsThirdParty > div {
+  margin: 0 0.8rem;
+}
+.voorwaardenFooter .voorwaardenContainer .iconsThirdParty > div svg {
+  transition: 0.5s;
+  border-radius: 0.7rem;
+  padding: 0.4rem;
+}
+.voorwaardenFooter .voorwaardenContainer .iconsThirdParty > div svg:hover {
+  background-color: #18181820;
+}
+.voorwaardenFooter .voorwaardenContainer .iconsThirdParty .feweb a, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty .googlePartner a {
+  transition: 0.5s;
+  border-radius: 0.7rem;
+  padding: 0.4rem;
+  color: #c30005;
+  text-transform: capitalize;
+}
+.voorwaardenFooter .voorwaardenContainer .iconsThirdParty .feweb a:hover, .voorwaardenFooter .voorwaardenContainer .iconsThirdParty .googlePartner a:hover {
+  background-color: #18181820;
+}
+
+@media only screen and (max-width: 380px) {
+  .infoNavContainer .socialNav i {
+    font-size: 2.8rem;
+    margin-left: 0.2rem;
+  }
+
+  .openingsurenNav .updateOpeningsuren p {
+    font-size: 1.5rem;
+  }
+  .openingsurenNav .updateOpeningsuren a {
+    font-size: 1rem;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container h1 {
+    font-size: 4rem;
+  }
+
+  .heroHeader h1, .heroHeader p {
+    text-align: center;
+  }
+  .heroHeader p {
+    margin-left: 0;
+  }
+
+  .heroContent aside a {
+    font-size: 1.6rem;
+  }
+  .heroContent aside p {
+    font-size: 1.2rem;
+  }
+
+  .websitesHeader h2 {
+    text-align: center;
+  }
+
+  .contactContainer p {
+    text-align: center;
+  }
+
+  .infoContainer > a {
+    font-size: 2.3rem;
+  }
+
+  .hostingContainer .hostingContent .hostingRight img {
+    width: 25rem;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+  .updateOpeningsuren p {
+    font-size: 2rem;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+  #hero .heroContent {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1042px) {
+  #visitekaarten .visitekaartenContainer {
+    gap: 0;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*
+    global css
+*/
+/**/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+.structural {
+  position: absolute;
+  left: -9999px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ir {
+  display: block;
+  background-size: 100%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 10.5rem;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+section {
+  padding: 4rem 1rem;
+}
+
+.container {
+  max-width: 140rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Alice";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Alice";
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  color: #404040;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-family: "Kalam";
+  margin: 0.3rem 1rem;
+}
+
+p {
+  font-family: "Kalam";
+}
+
+h1 {
+  text-align: center;
+}
+
+.setupContainer, .backupsContainer, .onderhoudContainer {
+  padding: 4rem 0;
+}
+
+#verkoopfreenas {
+  background-color: #f6f5f3;
+}
+#verkoopfreenas .textBackup img {
+  width: 50rem;
+}
+
+#setupfreenas .textBackup img {
+  width: 50rem;
+}
+
+#onderhoud {
+  background-color: #f6f5f3;
+}
+#onderhoud .textBackup img {
+  width: 50rem;
+}
+
+.prijzenCard:nth-child(1) .cardFooter {
+  padding-bottom: 3rem;
+}
+
+/*# sourceMappingURL=backups.css.map */
