@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.prijzenCheckbox {
+#security .textSecurity, #support .textSupport, .prijzenCheckbox {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -610,6 +610,38 @@ h4 {
 
 p {
   font-family: "Kalam";
+}
+
+h1 {
+  text-align: center;
+}
+
+.quality, .hostingContainer, .supportContainer, .securityContainer {
+  padding: 4rem 0;
+}
+
+#support {
+  background-color: #f6f5f3;
+  padding: 4rem 0;
+}
+#support .textSupport img {
+  width: 50rem;
+}
+
+#security .textSecurity img {
+  width: 50rem;
+}
+
+#prijzen {
+  background-color: #f6f5f3;
+}
+
+.prijzenCard:nth-child(1) .cardFooter {
+  padding-bottom: 3rem;
+}
+
+.cardFooter {
+  width: 22rem;
 }
 
 /*# sourceMappingURL=hosting.css.map */

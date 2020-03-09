@@ -1,1 +1,53 @@
 @import './partials/global';
+
+// h1
+h1{
+    text-align: center;
+}
+
+// quality
+.quality, .hostingContainer, .supportContainer, .securityContainer {
+    padding: 4rem 0;
+}
+
+// support 
+#support {
+    background-color: $colorBrokenWhite;
+    padding: 4rem 0;
+
+    .textSupport {
+        @extend %flexJcAround;
+
+        img {
+            width: 50rem;
+        }
+    }
+}
+
+// security
+#security {
+    .textSecurity {
+        @extend %flexJcAround;
+
+        img {
+            width: 50rem;
+        }
+    }
+}
+
+#prijzen {
+    background-color: $colorBrokenWhite;
+}
+
+// cards
+.prijzenCard {
+    &:nth-child(1) {
+        .cardFooter {
+            padding-bottom: 3rem;
+        }
+    }
+}
+
+.cardFooter {
+    width: 22rem;
+}
